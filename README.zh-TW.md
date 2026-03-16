@@ -25,6 +25,37 @@
 2. 瀏覽飼料包列表，點擊「查看技術規格」。
 3. 根據文件指示複製指令餵食給您的 OpenClaw 代理。
 
+
+## 🛒 Lobster Feed Library (主廚推薦飼料庫)
+
+### 🔹 核心代理升級
+- **龍蝦確定性代理框架** `[專家]` - [概覽](feeds/deterministic-framework/overview.md) | [安裝指令](feeds/deterministic-framework/installation_guide.md)
+- **反幻覺邏輯護欄** `[入門]` - [概覽](feeds/hallucination-guardrails/overview.md) | [安裝指令](feeds/hallucination-guardrails/installation_guide.md)
+- **工具驅動狀態機** `[入門]` - [概覽](feeds/tool-driven-state/overview.md) | [安裝指令](feeds/tool-driven-state/installation_guide.md)
+- **多代理協作調度員** `[專家]` - [概覽](feeds/multi-agent-coord/overview.md) | [安裝指令](feeds/multi-agent-coord/installation_guide.md)
+- **語義記憶增強器** `[入門]` - [概覽](feeds/semantic-memory-boost/overview.md) | [安裝指令](feeds/semantic-memory-boost/installation_guide.md)
+- **系統協議執行官** `[專家]` - [概覽](feeds/protocol-enforcer/overview.md) | [安裝指令](feeds/protocol-enforcer/installation_guide.md)
+
+### 🔹 自動化擴展包
+- **自主研究代理** `[進階]` - [概覽](feeds/autonomous-research/overview.md) | [安裝指令](feeds/autonomous-research/installation_guide.md)
+- **AI SEO 內容工廠** `[進階]` - [概覽](feeds/ai-seo-factory/overview.md) | [安裝指令](feeds/ai-seo-factory/installation_guide.md)
+- **聯盟行銷自動化** `[入門]` - [概覽](feeds/affiliate-marketing-auto/overview.md) | [安裝指令](feeds/affiliate-marketing-auto/installation_guide.md)
+- **潛在客戶自動開發** `[入門]` - [概覽](feeds/lead-gen-automation/overview.md) | [安裝指令](feeds/lead-gen-automation/installation_guide.md)
+- **社群內容流量引擎** `[入門]` - [概覽](feeds/social-content-engine/overview.md) | [安裝指令](feeds/social-content-engine/installation_guide.md)
+
+### 🔹 開發者工具包
+- **軟體專案架構代理** `[入門]` - [概覽](feeds/software-builder/overview.md) | [安裝指令](feeds/software-builder/installation_guide.md)
+- **代碼除錯代理** `[入門]` - [概覽](feeds/code-debugger/overview.md) | [安裝指令](feeds/code-debugger/installation_guide.md)
+- **文檔自動生成器** `[入門]` - [概覽](feeds/doc-generator/overview.md) | [安裝指令](feeds/doc-generator/installation_guide.md)
+- **測試套件架構師** `[入門]` - [概覽](feeds/test-suite-architect/overview.md) | [安裝指令](feeds/test-suite-architect/installation_guide.md)
+
+### 🔹 商業智能包
+- **市場研究自動化** `[進階]` - [概覽](feeds/market-research/overview.md) | [安裝指令](feeds/market-research/installation_guide.md)
+- **競爭情報代理** `[進階]` - [概覽](feeds/competitive-intel/overview.md) | [安裝指令](feeds/competitive-intel/installation_guide.md)
+- **數據採集代理** `[入門]` - [概覽](feeds/data-collection/overview.md) | [安裝指令](feeds/data-collection/installation_guide.md)
+- **數據分析工作流** `[進階]` - [概覽](feeds/data-analysis-flow/overview.md) | [安裝指令](feeds/data-analysis-flow/installation_guide.md)
+- **威脅情報監控員** `[進階]` - [概覽](feeds/threat-intel-monitor/overview.md) | [安裝指令](feeds/threat-intel-monitor/installation_guide.md)
+
 ---
 
 [English Version](README.en.md) | [MIT License](LICENSE)
