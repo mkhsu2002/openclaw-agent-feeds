@@ -9,5 +9,5 @@
 3. **重試與終止機制**：當狀態陷入循環或錯誤時，具備標準化的自動恢復路徑。
 
 ### 📋 建議模型
-- **頂級餵食**：Gemini 1.5 Pro (優秀的 Function Calling 穩定性)
-- **基礎餵食**：GPT-4o-mini
+- **推薦版本**：Gemini 3.0 Pro (優秀的 Function Calling 穩定性)
+- **最低版本**：o1-mini (2026 Gen)

@@ -1,4 +1,5 @@
-# OpenClaw Agent Feeds (龍蝦升級飼料包) - v0.1
+# OpenClaw Agent Feeds - v2.0 (2026 Edition)
+(龍蝦升級飼料包) - v2.0 (2026 Edition)
 
 ### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
 

@@ -9,5 +9,5 @@
 3. **語義標籤優化 (LSI)**：自動集成相關關鍵字，提升搜尋引擎排名。
 
 ### 📋 建議模型
-- **頂級餵食**：Claude 3.5 Sonnet (文字細膩度極佳) / Gemini 1.5 Pro
-- **基礎餵食**：GPT-4o-mini
+- **推薦版本**：Claude 4.5 Sonnet (文字細膩度極佳) / Gemini 3.0 Pro
+- **最低版本**：o1-mini (2026 Gen)
