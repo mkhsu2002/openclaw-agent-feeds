@@ -1,0 +1,142 @@
+[
+  {
+    "id": "deterministic-framework",
+    "name": "龍蝦確定性代理框架",
+    "category": "核心代理升級",
+    "description": "為複雜決策實施嚴格的邏輯分支與可重複執行路徑，確保執行的一致性。",
+    "path": "deterministic-framework/"
+  },
+  {
+    "id": "hallucination-guardrails",
+    "name": "反幻覺邏輯護欄",
+    "category": "核心代理升級",
+    "description": "實施多層交叉驗證，消除 AI 輸出中的事實錯誤與無根據聲明。",
+    "path": "hallucination-guardrails/"
+  },
+  {
+    "id": "tool-driven-state",
+    "name": "工具驅動狀態機",
+    "category": "核心代理升級",
+    "description": "將代理邏輯轉化為穩健的狀態機，由特定工具輸出與傳感器數據驅動。",
+    "path": "tool-driven-state/"
+  },
+  {
+    "id": "autonomous-research",
+    "name": "自主研究代理",
+    "category": "自動化擴展包",
+    "description": "端到端的多源數據收集、綜合與報告生成，無需人工干預。",
+    "path": "autonomous-research/"
+  },
+  {
+    "id": "ai-seo-factory",
+    "name": "AI SEO 內容工廠",
+    "category": "自動化擴展包",
+    "description": "利用關鍵字優化、高權威性的技術指標與文章，實現大規模內容生產。",
+    "path": "ai-seo-factory/"
+  },
+  {
+    "id": "affiliate-marketing-auto",
+    "name": "聯盟行銷自動化",
+    "category": "自動化擴展包",
+    "description": "自動化產品分析、連結生成與多通路內容分發，優化轉化率。",
+    "path": "affiliate-marketing-auto/"
+  },
+  {
+    "id": "software-builder",
+    "name": "軟體專案架構代理",
+    "category": "開發者工具包",
+    "description": "根據架構說明書自動搭建、實施並記錄完整的軟體模組。",
+    "path": "software-builder/"
+  },
+  {
+    "id": "code-debugger",
+    "name": "代碼除錯代理",
+    "category": "開發者工具包",
+    "description": "自動化追蹤分析、錯誤定位與關鍵任務系統的修正更新。",
+    "path": "code-debugger/"
+  },
+  {
+    "id": "doc-generator",
+    "name": "文檔自動生成器",
+    "category": "開發者工具包",
+    "description": "從源代碼中提取邏輯模式，生成全面的 API 參考與系統導覽。",
+    "path": "doc-generator/"
+  },
+  {
+    "id": "market-research",
+    "name": "市場研究自動化",
+    "category": "商業智能包",
+    "description": "即時監控市場趨勢、消費者情緒與宏觀經濟指標。",
+    "path": "market-research/"
+  },
+  {
+    "id": "competitive-intel",
+    "name": "競爭情報代理",
+    "category": "商業智能包",
+    "description": "自動化監控與分析競品功能差距與策略轉型。",
+    "path": "competitive-intel/"
+  },
+  {
+    "id": "data-collection",
+    "name": "數據採集代理",
+    "category": "商業智能包",
+    "description": "分佈式爬蟲與 API 整合器，用於大規模結構化數據提取。",
+    "path": "data-collection/"
+  },
+  {
+    "id": "multi-agent-coord",
+    "name": "多代理協作調度員",
+    "category": "核心代理升級",
+    "description": "調度專業化子代理之間的複雜工作流，實現層次化的任務分配。",
+    "path": "multi-agent-coord/"
+  },
+  {
+    "id": "data-analysis-flow",
+    "name": "數據分析工作流",
+    "category": "商業智能包",
+    "description": "自動化原始數據集的清洗、統計建模與視覺化流水線。",
+    "path": "data-analysis-flow/"
+  },
+  {
+    "id": "semantic-memory-boost",
+    "name": "語義記憶增強器",
+    "category": "核心代理升級",
+    "description": "增強型 RAG 架構，用於長期知識保留與精確的向量檢索。",
+    "path": "semantic-memory-boost/"
+  },
+  {
+    "id": "protocol-enforcer",
+    "name": "系統協議執行官",
+    "category": "核心代理升級",
+    "description": "嚴格監控代理邏輯內的安全性協議與架構標準合規性。",
+    "path": "protocol-enforcer/"
+  },
+  {
+    "id": "lead-gen-automation",
+    "name": "潛在客戶自動開發",
+    "category": "自動化擴展包",
+    "description": "透過社交與網路分析，自動識別並接觸高價值潛在客戶。",
+    "path": "lead-gen-automation/"
+  },
+  {
+    "id": "social-content-engine",
+    "name": "社群內容流量引擎",
+    "category": "自動化擴展包",
+    "description": "病毒式趨勢分析，自動生成平台特定的病毒式內容模組。",
+    "path": "social-content-engine/"
+  },
+  {
+    "id": "test-suite-architect",
+    "name": "測試套件架構師",
+    "category": "開發者工具包",
+    "description": "根據系統需求自動生成單元、集成與 E2E 測試案例。",
+    "path": "test-suite-architect/"
+  },
+  {
+    "id": "threat-intel-monitor",
+    "name": "威脅情報監控員",
+    "category": "商業智能包",
+    "description": "持續掃描生態系統中的網絡安全漏洞與新興數位威脅。",
+    "path": "threat-intel-monitor/"
+  }
+]

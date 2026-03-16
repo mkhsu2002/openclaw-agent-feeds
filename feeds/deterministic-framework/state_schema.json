@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Deterministic Framework State Schema",
+  "type": "object",
+  "properties": {
+    "current_step_id": { "type": "string" },
+    "logic_graph": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "node_id": { "type": "string" },
+          "predicate": { "type": "string" },
+          "status": { "enum": ["PENDING", "ACTIVE", "COMPLETED", "FAILED"] }
+        }
+      }
+    },
+    "variable_registry": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "required": ["current_step_id", "logic_graph"]
+}

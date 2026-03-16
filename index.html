@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="OpenClaw 龍蝦升級飼料包｜FlyPig AI 專業技術庫">
+    <meta name="description" content="OpenClaw 專業 AI 代理升級模組，包含確定性框架、自動化研究與多代理協作系統。專為工程團隊打造的技術規範。">
+    
+    <!-- Bootstrap CSS (System A) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS (System A) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg">
+    
+    <title>OpenClaw 龍蝦升級飼料包 | FlyPig AI</title>
+    
+    <style>
+        :root {
+            --pack-card-bg: #ffffff;
+            --pack-modal-bg: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 100px 0 40px;
+            min-height: auto !important;
+        }
+
+        .pack-grid {
+            padding: 40px 0;
+            background-color: var(--background-color);
+        }
+
+        .service-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .category-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .filter-nav {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            border-radius: 30px;
+            padding: 8px 24px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .markdown-content h1 { font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-color); }
+        .markdown-content h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: var(--primary-color); border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+        .markdown-content h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-color); }
+        .markdown-content p { color: #546e7a; line-height: 1.8; margin-bottom: 1rem; }
+        .markdown-content ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .markdown-content li { margin-bottom: 0.5rem; color: #546e7a; }
+        .markdown-content code { background-color: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', Courier, monospace; color: #d81b60; }
+        .markdown-content pre { background-color: #263238; color: #fff; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; overflow-x: auto; }
+        .markdown-content pre code { background-color: transparent; color: inherit; padding: 0; }
+        
+        .modal {
+            z-index: 1060 !important;
+        }
+        .modal-backdrop {
+            z-index: 1050 !important;
+        }
+        
+        #modal-content {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #333;
+        }
+        .modal-body {
+            background-color: #ffffff !important;
+            border-radius: 0 0 15px 15px;
+        }
+        .modal-header {
+            background: #f8f9fa !important;
+            border-bottom: 1px solid #dee2e6 !important;
+            color: #333 !important;
+        }
+        .modal-title {
+            color: #0f172a !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Standalone) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://flypigai.icareu.tw/">
+                <img src="assets/images/logo.jpg" alt="FlyPig AI Logo" width="40" height="40" style="border-radius: 50%; object-fit: cover;">
+                FlyPig AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/">返回主站</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">龍蝦升級包</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/ai-collect">AI 工具集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/#contact">聯絡我們</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-primary" href="https://www.facebook.com/FlyPigAI" target="_blank">
+                            <i class="fab fa-facebook-f me-2"></i>追蹤 FlyPig FB
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-4">OpenClaw 龍蝦升級飼料包</h1>
+            <p class="lead mb-0 text-white opacity-90 mx-auto" style="max-width: 800px;">
+                專為 AI 系統架構師打造的技術模組庫。透過標準化的升級組件，<br>
+                顯著提升 AI 代理的執行精準度、自主性與協作能力。
+            </p>
+        </div>
+    </section>
+
+    <!-- Library Section -->
+    <main id="library" class="pack-grid">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">飼料包 Buffet</h2>
+                <p class="text-muted">請遵照最低建議模型版本慎選餵食</p>
+            </div>
+
+            <!-- Filter Navigation -->
+            <div class="filter-nav" data-aos="fade-up">
+                <button onclick="filterPacks('全部')" class="btn btn-outline-primary filter-btn active">全部模組</button>
+                <button onclick="filterPacks('核心代理升級')" class="btn btn-outline-primary filter-btn">核心升級</button>
+                <button onclick="filterPacks('自動化擴展包')" class="btn btn-outline-primary filter-btn">自動化</button>
+                <button onclick="filterPacks('開發者工具包')" class="btn btn-outline-primary filter-btn">開發者</button>
+                <button onclick="filterPacks('商業智能包')" class="btn btn-outline-primary filter-btn">商業智能</button>
+            </div>
+
+            <!-- Packs Grid -->
+            <div id="packs-grid" class="row g-4">
+                <!-- Packs will be injected here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal (System A Style) -->
+    <div class="modal fade" id="packModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-light border-0 py-3">
+                    <h5 class="modal-title fw-bold" id="modalTitle">技術規格詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <div id="modal-content" class="markdown-content">
+                        <!-- Content injected here -->
+                    </div>
+                </div>
+                <div class="modal-footer bg-light border-0">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">關閉視窗</button>
+                    <button type="button" id="installGuideBtn" class="btn btn-primary rounded-pill px-4">安裝指南</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (System A) -->
+    <footer class="footer py-5 mt-auto">
+        <div class="container text-center">
+            <p class="mb-2">FlyPig AI - 專業的企業 AI 與 Martech 整合服務供應商</p>
+            <p class="text-muted small">&copy; 2025 FlyPig AI - 艾可開發股份有限公司. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        let allPacks = [];
+        const packModal = new bootstrap.Modal(document.getElementById('packModal'));
+
+        // Load Packs
+        fetch('feeds/packs.json')
+            .then(res => res.json())
+            .then(data => {
+                allPacks = data;
+                renderPacks(allPacks);
+            });
+
+        function renderPacks(packs) {
+            const grid = document.getElementById('packs-grid');
+            grid.innerHTML = packs.map((pack, index) => `
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="${(index % 4) * 100}">
+                    <article class="service-card p-4 shadow-sm bg-white rounded-4 h-100">
+                        <div class="category-badge">${pack.category}</div>
+                        <h3 class="h5 fw-bold mb-3">${pack.name}</h3>
+                        <p class="text-muted small mb-4 flex-grow-1">${pack.description}</p>
+                        <button onclick="viewDetails('${pack.id}')" class="btn btn-outline-primary btn-sm rounded-pill w-100">查看技術規格</button>
+                    </article>
+                </div>
+            `).join('');
+        }
+
+        function filterPacks(category) {
+            const btns = document.querySelectorAll('.filter-btn');
+            btns.forEach(btn => {
+                if(btn.innerText.includes(category)) btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+
+            if (category === '全部') {
+                renderPacks(allPacks);
+            } else {
+                renderPacks(allPacks.filter(p => p.category.includes(category)));
+            }
+        }
+
+        async function viewDetails(packId) {
+            const pack = allPacks.find(p => p.id === packId);
+            document.getElementById('modalTitle').innerText = pack.name;
+            const contentDiv = document.getElementById('modal-content');
+            contentDiv.innerHTML = '<div class="text-center py-5"><div class="spinner-border text-primary" role="status"></div></div>';
+            
+            packModal.show();
+            
+            try {
+                const response = await fetch(`feeds/${pack.path}overview.md`);
+                if (!response.ok) throw new Error('技術文件尚未發布。');
+                const text = await response.text();
+                contentDiv.innerHTML = parseMarkdown(text);
+                
+                document.getElementById('installGuideBtn').onclick = () => loadInstallGuide(packId);
+                document.getElementById('installGuideBtn').classList.remove('d-none');
+            } catch (err) {
+                contentDiv.innerHTML = `<div class="alert alert-warning">${err.message}</div>`;
+                document.getElementById('installGuideBtn').classList.add('d-none');
+            }
+        }
+
+        async function loadInstallGuide(packId) {
+            const pack = allPacks.find(p => p.id === packId);
+            const contentDiv = document.getElementById('modal-content');
+            contentDiv.innerHTML = '<div class="text-center py-5"><div class="spinner-border text-primary" role="status"></div></div>';
+            
+            try {
+                const response = await fetch(`feeds/${pack.path}installation_guide.md`);
+                if (!response.ok) throw new Error('安裝指南尚未發布。');
+                const text = await response.text();
+                contentDiv.innerHTML = parseMarkdown(text);
+                document.getElementById('installGuideBtn').classList.add('d-none');
+            } catch (err) {
+                contentDiv.innerHTML = `<div class="alert alert-warning">${err.message}</div>`;
+            }
+        }
+
+        function parseMarkdown(md) {
+            return md
+                .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+                .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+                .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+                .replace(/^\- (.*$)/gim, '<li>$1</li>')
+                .replace(/li>\n<li>/gim, 'li><li>')
+                .replace(/<li>(.*?)<\/li>/gim, '<ul><li>$1</li></ul>')
+                .replace(/<\/ul><ul>/gim, '')
+                .replace(/`(.*?)`/gim, '<code>$1</code>')
+                .replace(/```([\s\S]*?)```/gim, '<pre><code>$1</code></pre>')
+                .replace(/\n\n/gim, '</p><p>')
+                .replace(/^(?!<[hluap]|div|pre)(.*)$/gim, '<p>$1</p>')
+                .replace(/<p><\/p>/gim, '');
+        }
+    </script>
+</body>
+</html>
