@@ -29,43 +29,43 @@ This project serves as a high-quality "Feed Buffet," allowing developers and arc
 ## 🛒 Lobster Feed Library
 
 ### 🔹 Core Agent Upgrades
-- **OpenClaw Deterministic Framework** `[Expert]` - [Overview](feeds/deterministic-framework/overview.md) | [Install Guide](feeds/deterministic-framework/installation_guide.md)
-- **Hallucination Guardrails** `[Beginner]` - [Overview](feeds/hallucination-guardrails/overview.md) | [Install Guide](feeds/hallucination-guardrails/installation_guide.md)
-- **Tool-Driven State Machine** `[Beginner]` - [Overview](feeds/tool-driven-state/overview.md) | [Install Guide](feeds/tool-driven-state/installation_guide.md)
-- **Multi-Agent Orchestrator** `[Expert]` - [Overview](feeds/multi-agent-coord/overview.md) | [Install Guide](feeds/multi-agent-coord/installation_guide.md)
-- **Semantic Memory Boost** `[Beginner]` - [Overview](feeds/semantic-memory-boost/overview.md) | [Install Guide](feeds/semantic-memory-boost/installation_guide.md)
-- **Protocol Enforcer** `[Expert]` - [Overview](feeds/protocol-enforcer/overview.md) | [Install Guide](feeds/protocol-enforcer/installation_guide.md)
-- **Deep Intent Clarifier** `[Advanced]` [NEW] - [Overview](feeds/intent-clarifier/overview.md) | [Install Guide](feeds/intent-clarifier/installation_guide.md)
+- **OpenClaw Deterministic Framework** `[Expert]` - [Overview](feeds/deterministic-framework/overview.en.md) | [Install Guide](feeds/deterministic-framework/installation_guide.en.md)
+- **Hallucination Guardrails** `[Beginner]` - [Overview](feeds/hallucination-guardrails/overview.en.md) | [Install Guide](feeds/hallucination-guardrails/installation_guide.en.md)
+- **Tool-Driven State Machine** `[Beginner]` - [Overview](feeds/tool-driven-state/overview.en.md) | [Install Guide](feeds/tool-driven-state/installation_guide.en.md)
+- **Multi-Agent Orchestrator** `[Expert]` - [Overview](feeds/multi-agent-coord/overview.en.md) | [Install Guide](feeds/multi-agent-coord/installation_guide.en.md)
+- **Semantic Memory Boost** `[Beginner]` - [Overview](feeds/semantic-memory-boost/overview.en.md) | [Install Guide](feeds/semantic-memory-boost/installation_guide.en.md)
+- **Protocol Enforcer** `[Expert]` - [Overview](feeds/protocol-enforcer/overview.en.md) | [Install Guide](feeds/protocol-enforcer/installation_guide.en.md)
+- **Deep Intent Clarifier** `[Advanced]` [NEW] - [Overview](feeds/intent-clarifier/overview.en.md) | [Install Guide](feeds/intent-clarifier/installation_guide.en.md)
 
 ### 🔹 Multimodal & Security [NEW]
-- **Visual Auditor Agent** `[Advanced]` - [Overview](feeds/visual-auditor/overview.md) | [Install Guide](feeds/visual-auditor/installation_guide.md)
-- **Voice-to-Logic Extractor** `[Beginner]` - [Overview](feeds/voice-to-logic/overview.md) | [Install Guide](feeds/voice-to-logic/installation_guide.md)
-- **PII Masking Guardrails** `[Expert]` - [Overview](feeds/pii-masking/overview.md) | [Install Guide](feeds/pii-masking/installation_guide.md)
-- **Global Compliance Wrapper** `[Expert]` - [Overview](feeds/global-compliance/overview.md) | [Install Guide](feeds/global-compliance/installation_guide.md)
+- **Visual Auditor Agent** `[Advanced]` - [Overview](feeds/visual-auditor/overview.en.md) | [Install Guide](feeds/visual-auditor/installation_guide.en.md)
+- **Voice-to-Logic Extractor** `[Beginner]` - [Overview](feeds/voice-to-logic/overview.en.md) | [Install Guide](feeds/voice-to-logic/installation_guide.en.md)
+- **PII Masking Guardrails** `[Expert]` - [Overview](feeds/pii-masking/overview.en.md) | [Install Guide](feeds/pii-masking/installation_guide.en.md)
+- **Global Compliance Wrapper** `[Expert]` - [Overview](feeds/global-compliance/overview.en.md) | [Install Guide](feeds/global-compliance/installation_guide.en.md)
 
 ### 🔹 Vertical Specialties [NEW]
-- **Legal Precision Analyst** `[Expert]` - [Overview](feeds/legal-precision/overview.md) | [Install Guide](feeds/legal-precision/installation_guide.md)
-- **Medical Research Pro** `[Expert]` - [Overview](feeds/medical-research/overview.md) | [Install Guide](feeds/medical-research/installation_guide.md)
+- **Legal Precision Analyst** `[Expert]` - [Overview](feeds/legal-precision/overview.en.md) | [Install Guide](feeds/legal-precision/installation_guide.en.md)
+- **Medical Research Pro** `[Expert]` - [Overview](feeds/medical-research/overview.en.md) | [Install Guide](feeds/medical-research/installation_guide.en.md)
 
 ### 🔹 Automation Packs
-- **Autonomous Research Agent** `[Advanced]` - [Overview](feeds/autonomous-research/overview.md) | [Install Guide](feeds/autonomous-research/installation_guide.md)
-- **AI SEO Content Factory** `[Advanced]` - [Overview](feeds/ai-seo-factory/overview.md) | [Install Guide](feeds/ai-seo-factory/installation_guide.md)
-- **Affiliate Marketing Auto** `[Beginner]` - [Overview](feeds/affiliate-marketing-auto/overview.md) | [Install Guide](feeds/affiliate-marketing-auto/installation_guide.md)
-- **Lead Gen Automation** `[Beginner]` - [Overview](feeds/lead-gen-automation/overview.md) | [Install Guide](feeds/lead-gen-automation/installation_guide.md)
-- **Social Content Engine** `[Beginner]` - [Overview](feeds/social-content-engine/overview.md) | [Install Guide](feeds/social-content-engine/installation_guide.md)
+- **Autonomous Research Agent** `[Advanced]` - [Overview](feeds/autonomous-research/overview.en.md) | [Install Guide](feeds/autonomous-research/installation_guide.en.md)
+- **AI SEO Content Factory** `[Advanced]` - [Overview](feeds/ai-seo-factory/overview.en.md) | [Install Guide](feeds/ai-seo-factory/installation_guide.en.md)
+- **Affiliate Marketing Auto** `[Beginner]` - [Overview](feeds/affiliate-marketing-auto/overview.en.md) | [Install Guide](feeds/affiliate-marketing-auto/installation_guide.en.md)
+- **Lead Gen Automation** `[Beginner]` - [Overview](feeds/lead-gen-automation/overview.en.md) | [Install Guide](feeds/lead-gen-automation/installation_guide.en.md)
+- **Social Content Engine** `[Beginner]` - [Overview](feeds/social-content-engine/overview.en.md) | [Install Guide](feeds/social-content-engine/installation_guide.en.md)
 
 ### 🔹 Developer Tools
-- **Software Project Architect** `[Beginner]` - [Overview](feeds/software-builder/overview.md) | [Install Guide](feeds/software-builder/installation_guide.md)
-- **Code Debugger Agent** `[Beginner]` - [Overview](feeds/code-debugger/overview.md) | [Install Guide](feeds/code-debugger/installation_guide.md)
-- **Doc Generator** `[Beginner]` - [Overview](feeds/doc-generator/overview.md) | [Install Guide](feeds/doc-generator/installation_guide.md)
-- **Test Suite Architect** `[Beginner]` - [Overview](feeds/test-suite-architect/overview.md) | [Install Guide](feeds/test-suite-architect/installation_guide.md)
+- **Software Project Architect** `[Beginner]` - [Overview](feeds/software-builder/overview.en.md) | [Install Guide](feeds/software-builder/installation_guide.en.md)
+- **Code Debugger Agent** `[Beginner]` - [Overview](feeds/code-debugger/overview.en.md) | [Install Guide](feeds/code-debugger/installation_guide.en.md)
+- **Doc Generator** `[Beginner]` - [Overview](feeds/doc-generator/overview.en.md) | [Install Guide](feeds/doc-generator/installation_guide.en.md)
+- **Test Suite Architect** `[Beginner]` - [Overview](feeds/test-suite-architect/overview.en.md) | [Install Guide](feeds/test-suite-architect/installation_guide.en.md)
 
 ### 🔹 Business Intelligence
-- **Market Research Auto** `[Advanced]` - [Overview](feeds/market-research/overview.md) | [Install Guide](feeds/market-research/installation_guide.md)
-- **Competitive Intel Agent** `[Advanced]` - [Overview](feeds/competitive-intel/overview.md) | [Install Guide](feeds/competitive-intel/installation_guide.md)
-- **Data Collection Agent** `[Beginner]` - [Overview](feeds/data-collection/overview.md) | [Install Guide](feeds/data-collection/installation_guide.md)
-- **Data Analysis Flow** `[Advanced]` - [Overview](feeds/data-analysis-flow/overview.md) | [Install Guide](feeds/data-analysis-flow/installation_guide.md)
-- **Threat Intel Monitor** `[Advanced]` - [Overview](feeds/threat-intel-monitor/overview.md) | [Install Guide](feeds/threat-intel-monitor/installation_guide.md)
+- **Market Research Auto** `[Advanced]` - [Overview](feeds/market-research/overview.en.md) | [Install Guide](feeds/market-research/installation_guide.en.md)
+- **Competitive Intel Agent** `[Advanced]` - [Overview](feeds/competitive-intel/overview.en.md) | [Install Guide](feeds/competitive-intel/installation_guide.en.md)
+- **Data Collection Agent** `[Beginner]` - [Overview](feeds/data-collection/overview.en.md) | [Install Guide](feeds/data-collection/installation_guide.en.md)
+- **Data Analysis Flow** `[Advanced]` - [Overview](feeds/data-analysis-flow/overview.en.md) | [Install Guide](feeds/data-analysis-flow/installation_guide.en.md)
+- **Threat Intel Monitor** `[Advanced]` - [Overview](feeds/threat-intel-monitor/overview.en.md) | [Install Guide](feeds/threat-intel-monitor/installation_guide.en.md)
 
 ---
 ### 🚀 Official Website: [https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
