@@ -42,12 +42,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/">返回主站</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/openclaw-ai-agent-guide">OpenClaw實戰指南</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/ai-collect">AI 工具集</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://flypigai.icareu.tw/#contact">聯絡我們</a></li>
+                        <li class="nav-item"><a id="nav-home" class="nav-link" href="https://flypigai.icareu.tw/">返回主站</a></li>
+                        <li class="nav-item"><a id="nav-guide" class="nav-link" href="https://flypigai.icareu.tw/openclaw-ai-agent-guide">OpenClaw實戰指南</a></li>
+                        <li class="nav-item"><a id="nav-collect" class="nav-link" href="https://flypigai.icareu.tw/ai-collect">AI 工具集</a></li>
+                        <li class="nav-item"><a id="nav-contact" class="nav-link" href="https://flypigai.icareu.tw/#contact">聯絡我們</a></li>
                         <li class="nav-item ms-lg-3">
-                            <a class="btn btn-fb-follow" href="https://www.facebook.com/FlyPigAI" target="_blank">
+                            <div class="lang-switcher">
+                                <button id="lang-tw" class="btn btn-sm btn-outline-primary active">中</button>
+                                <span class="text-muted mx-1">/</span>
+                                <button id="lang-en" class="btn btn-sm btn-outline-primary">EN</button>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a id="nav-fb" class="btn btn-fb-follow" href="https://www.facebook.com/FlyPigAI" target="_blank">
                                 <i class="fab fa-facebook-f me-2"></i> 追蹤 FlyPig FB
                             </a>
                         </li>
@@ -75,6 +82,16 @@
             <section class="buffet-header" data-aos="fade-up" data-aos-delay="100">
                 <h2 class="h2">飼料包 Buffet</h2>
                 <p>請遵照最低建議模型版本慎選餵食</p>
+
+                <!-- Search Bar -->
+                <div class="search-container mx-auto">
+                    <div class="input-group mb-4">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="fas fa-search text-muted"></i>
+                        </span>
+                        <input type="text" id="feed-search" class="form-control border-start-0" placeholder="搜尋模組名稱或描述..." aria-label="Search feeds">
+                    </div>
+                </div>
                 
                 <!-- Filter Navigation (Dynamic) -->
                 <nav class="filter-nav mb-2" id="category-filters" aria-label="類別選單">
@@ -115,7 +132,7 @@
                     </div>
                 </div>
                 <footer class="modal-footer border-top bg-light">
-                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" id="modalCloseBtn" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">關閉</button>
                     <button type="button" id="installGuideBtn" class="btn btn-primary rounded-pill px-4 d-none">安裝指南</button>
                 </footer>
             </div>
