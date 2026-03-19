@@ -1,5 +1,15 @@
 [
   {
+    "id": "universal-core",
+    "name": "龍蝦通用核心飼料 (L0)",
+    "name_en": "Universal Core Feed (L0)",
+    "category": "核心代理升級",
+    "description": "所有龍蝦代理的基礎出廠設置。定義核心身分、專業語調與標準思維邏輯，適用於任何場景。",
+    "description_en": "The baseline factory setting for all Lobster agents. Defines core identity, professional tone, and standard reasoning logic for any scenario.",
+    "path": "universal-core/",
+    "level": "入門"
+  },
+  {
     "id": "deterministic-framework",
     "name": "龍蝦確定性代理框架",
     "name_en": "OpenClaw Deterministic Framework",
