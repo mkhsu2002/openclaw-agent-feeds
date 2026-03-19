@@ -29,6 +29,7 @@ This project serves as a high-quality "Feed Buffet," allowing developers and arc
 ## 🛒 Lobster Feed Library
 
 ### 🔹 Core Agent Upgrades
+- **Universal Core Feed (L0)** `[Beginner]` [NEW] - [Overview](feeds/universal-core/overview.en.md) | [Install Guide](feeds/universal-core/installation_guide.en.md)
 - **OpenClaw Deterministic Framework** `[Expert]` - [Overview](feeds/deterministic-framework/overview.en.md) | [Install Guide](feeds/deterministic-framework/installation_guide.en.md)
 - **Hallucination Guardrails** `[Beginner]` - [Overview](feeds/hallucination-guardrails/overview.en.md) | [Install Guide](feeds/hallucination-guardrails/installation_guide.en.md)
 - **Tool-Driven State Machine** `[Beginner]` - [Overview](feeds/tool-driven-state/overview.en.md) | [Install Guide](feeds/tool-driven-state/installation_guide.en.md)

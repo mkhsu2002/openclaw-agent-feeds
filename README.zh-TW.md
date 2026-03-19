@@ -31,6 +31,7 @@
 ## 🛒 Lobster Feed Library (主廚推薦飼料庫)
 
 ### 🔹 核心代理升級
+- **龍蝦通用核心飼料 (L0)** `[入門]` [NEW] - [概覽](feeds/universal-core/overview.md) | [安裝指令](feeds/universal-core/installation_guide.md)
 - **龍蝦確定性代理框架** `[專家]` - [概覽](feeds/deterministic-framework/overview.md) | [安裝指令](feeds/deterministic-framework/installation_guide.md)
 - **反幻覺邏輯護欄** `[入門]` - [概覽](feeds/hallucination-guardrails/overview.md) | [安裝指令](feeds/hallucination-guardrails/installation_guide.md)
 - **工具驅動狀態機** `[入門]` - [概覽](feeds/tool-driven-state/overview.md) | [安裝指令](feeds/tool-driven-state/installation_guide.md)
