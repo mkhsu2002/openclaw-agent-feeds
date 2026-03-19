@@ -135,6 +135,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         if (navFb) navFb.innerHTML = `<i class="fab fa-facebook-f me-2"></i> ${isEn ? 'Follow FB' : '追蹤 FlyPig FB'}`;
+
+        // Footer
+        const footerCopyright = document.getElementById('footer-copyright');
+        const footerPrivacy = document.getElementById('footer-privacy');
+        const footerTerms = document.getElementById('footer-terms');
+
+        if (footerCopyright) {
+            footerCopyright.innerHTML = isEn ? 
+                '&copy; 2026 FlyPig AI. Professional Corporate AI & Martech Integration Provider.' : 
+                '&copy; 2026 FlyPig AI. 專業的企業 AI 與 Martech 整合服務供應商。';
+        }
+        if (footerPrivacy) footerPrivacy.innerText = isEn ? 'Privacy Policy' : '隱私政策';
+        if (footerTerms) footerTerms.innerText = isEn ? 'Terms of Service' : '服務條款';
     }
 
     // 5. Renderers
