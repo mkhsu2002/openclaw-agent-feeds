@@ -1,7 +1,7 @@
 # 🦞 [Core Upgrade] Lobster Deterministic Framework
 
 ### 📄 File Overview
-This feed pack is specifically designed for AI Agents that require **extremely high output stability** and **rigorous logic**. By establishing "mental guardrails" and "state machine logic," it minimizes LLM uncertainty.
+This feed pack is specifically designed for AI Agents that require **extremely high output stability** and **rigorous logic**. By establishing "mental guardrails" and "decision loop logic," it minimizes LLM uncertainty.
 
 ### 🚀 Core Enhancements
 1. **Logic Gates**: Forces the agent to perform self-checks before outputting.

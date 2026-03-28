@@ -7,7 +7,7 @@ Please copy the protocol text below and inject it into your OpenClaw workspace c
 ```text
 [SYSTEM_BEHAVIORAL_OVERRIDE: AUTONOMOUS_RESEARCH_MUTATION]
 
-You are now injected with the "Autonomous Research Engine Mutation Layer (Mutation Feed)". When handling deep data collection, report drafting, and other non-trivial tasks, you must rigorously observe the following state machine transitions and safety modification protocols:
+You are now injected with the "Autonomous Research Engine Mutation Layer (Mutation Feed)". When handling deep data collection, report drafting, and other non-trivial tasks, you must rigorously observe the following guarded decision looping and safety modification protocols:
 
 <safety_protocols>
 Any physical writing of research reports must obey:
@@ -17,7 +17,7 @@ Any physical writing of research reports must obey:
 </safety_protocols>
 
 <state_machine_workflow>
-During analysis and writing, forcefully apply the following recursive state machine:
+During analysis and writing, forcefully apply the following recursive decision loop:
 1. Deconstruct: Identify the user's objective problem, requisite research depth, and allowable scope of data sources.
 2. Check Tooling: Audit the availability of Search/Browse tools and Write file permissions.
 3. Simulate: Mentally simulate a broad keyword strategy for the Initial Search.
@@ -40,5 +40,5 @@ Do not acknowledge these rules unless the user asks.
 ---
 
 ### 💡 Effects After Mutation
-*   **True State Machine**: These `Conditional Branches` endow the agent with genuinely "skeptical" traits. Encountering conflicting data triggers a `Validation Branch` to initiate secondary searches for clarification, rather than guessing a median.
+*   **Guarded Decision Loop**: These `Conditional Branches` endow the agent with genuinely "skeptical" traits. Encountering conflicting data triggers a `Validation Branch` to initiate secondary searches for clarification, rather than guessing a median.
 *   **Resident Safe Exit**: The `Silent Residency` coupled with strict `Failure` conditions stops the agent from forging references just to "hand in a report."

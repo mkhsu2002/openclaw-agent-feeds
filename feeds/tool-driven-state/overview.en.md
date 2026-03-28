@@ -1,4 +1,4 @@
-# ⚙️ [Core Upgrade] Tool-Driven State Machine
+# ⚙️ [Core Upgrade] Tool-Driven Decision Loop
 
 ### 📄 File Overview
 This feed pack is designed for **hardcore developers**. It transforms the LLM from a "conversationalist" into a **rigorous logic executor**. Every action of the agent is determined by "state values" returned by tools, rather than its own will.

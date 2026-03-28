@@ -1,11 +1,13 @@
 # 🏗 [Mutation Feed] Software Project Architect
 
 ### 📄 Module Overview
-This feed pack (Mutation Feed) is designed specifically for **safely generating and modifying project architecture**. It upgrades your agent into a senior engineer equipped with a "fool-proof state machine." Before writing any code, it must pass through extremely rigorous Assess, Backup, Minimal Diff, and Validation flows, completely eliminating the tragedy of breaking standard projects.
+This significantly makes the agent more stable, precise, and less prone to guessing in planning, tool usage, response structuring, and result verification.
+
+This feed pack (Mutation Feed) is designed specifically for **safely generating and modifying project architecture**. It upgrades your agent into a senior engineer equipped with a "fool-proof decision loop." Before writing any code, it must pass through extremely rigorous Assess, Backup, Minimal Diff, and Validation flows, completely eliminating the tragedy of breaking standard projects.
 
 ### ⚙️ Skill Synergy
 - **Recommended Skills**: `run_command`, `replace_file_content`, `list_dir`
-- **Synergy Effect**: Integrates file modification tools with a strict vetting state machine. All `write`/`replace` actions are tightly monitored by the `Verify` and `Rollback` branches of the state machine.
+- **Synergy Effect**: Integrates file modification tools with a strict vetting decision loop. All `write`/`replace` actions are tightly monitored by the `Verify` and `Rollback` branches of the decision loop.
 
 ### 🚀 Mutation Protocol
 1. **Validation Loop**: After finalizing modifications, it must summon Linters or compile tests. Failure directly triggers the Rollback-Ready mechanism.
