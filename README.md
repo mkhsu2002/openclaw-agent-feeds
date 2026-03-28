@@ -1,5 +1,7 @@
 # OpenClaw Agent Feeds (龍蝦升級飼料包) 2026Q1 Edition
 
+🔥 **Fully Optimized for OpenClaw v3.24 / 全面支援 OpenClaw v3.24 架構** 🔥
+
 歡迎來到 OpenClaw AI Agents 升級模組庫
 
 - **[繁體中文介紹 (Traditional Chinese)](README.zh-TW.md)**

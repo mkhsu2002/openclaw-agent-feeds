@@ -1,5 +1,7 @@
 # OpenClaw Agent Feeds - v0.2 (2026Q1)
 
+🔥 **Fully Optimized for OpenClaw v3.24 Architecture** 🔥
+
 ### 🦞 Project Philosophy: What is "Lobster Feed"?
 Within the OpenClaw ecosystem, formal capabilities are already handled by Skills, Plugins, and Bundles. **"Lobster Feeds"**, on the other hand, are designed as a **beginner-friendly feed library**, functioning as both a **behavioral upgrade system** and a **safe mutation layer for OpenClaw workspaces**.
 
