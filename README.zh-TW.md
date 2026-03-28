@@ -3,9 +3,9 @@
 ### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
 
 ### 🦞 專案理念：什麼是「龍蝦飼料」？
-在 OpenClaw 的生態系中，AI 代理（Agents）被暱稱為 **「龍蝦」**。而所謂的 **「龍蝦飼料 (Lobster Feeds)」**，本質上是經過深度調校、模組化的 **高級提示詞模板（Prompt Templates）**。
+在 OpenClaw 的生態系中，正式的能力擴充已具備 Skills、Plugins 與 Bundles。而 **「龍蝦飼料 (Lobster Feeds)」** 的定位則是 **對新手友善的飼料庫 (beginner-friendly feed library)**，同時也是一套 **行為升級系統 (behavioral upgrade system)** 與 **安全變異層 (safe mutation layer)**。
 
-這些「飼料」的設計初衷是為了讓使用者能透過通訊軟體（如 LINE, Telegram, FB Messenger）直接「餵食」給 OpenClaw 系統。每一份飼料包都代表了一種特定的技術升級或功能擴展：
+它不僅僅是提示詞（Prompt）的集合，更是讓 OpenClaw 代理（「龍蝦」）變得更聰明、更精準、更穩定的強大機制。這些「飼料」的設計初衷是讓使用者能透過通訊軟體（如 LINE, Telegram, FB Messenger）直接「餵食」給 OpenClaw 工作區，實現無縫的技術升級：
 
 - **標準化升級**：將複雜的執行邏輯封裝成易於解讀的指令。
 - **即時部署**：複製、貼上、發送，即可讓 AI 代理獲得新的能力。

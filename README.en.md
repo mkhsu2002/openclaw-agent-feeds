@@ -1,9 +1,9 @@
 # OpenClaw Agent Feeds - v0.2 (2026Q1)
 
 ### 🦞 Project Philosophy: What is "Lobster Feed"?
-In the OpenClaw ecosystem, AI Agents are affectionately referred to as **"Lobsters."** Consequently, **"Lobster Feeds"** are high-level, modular **Prompt Templates** that have been rigorously fine-tuned and architected.
+Within the OpenClaw ecosystem, formal capabilities are already handled by Skills, Plugins, and Bundles. **"Lobster Feeds"**, on the other hand, are designed as a **beginner-friendly feed library**, functioning as both a **behavioral upgrade system** and a **safe mutation layer for OpenClaw workspaces**.
 
-The core concept of these "feeds" is to enable users to "feed" OpenClaw directly via IM apps (such as LINE, Telegram, or FB Messenger). Each feed pack represents a specific technical upgrade or functional enhancement:
+Rather than just a collection of prompts, feeds are a powerful mechanism that makes OpenClaw Agents (affectionately known as "Lobsters") smarter, more accurate, and more stable. The core concept is to enable users to "feed" these upgrades directly to their OpenClaw workspace via IM apps (like LINE, Telegram, or FB Messenger) for seamless enhancement:
 
 - **Standardized Upgrades**: Encapsulates complex execution logic into easily interpretable instructions.
 - **Instant Deployment**: Simply copy, paste, and send to grant your AI agent new capabilities instantly.
