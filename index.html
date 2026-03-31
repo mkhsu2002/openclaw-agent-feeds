@@ -66,7 +66,7 @@
         <!-- Vibrant Restoration Hero Section -->
         <section class="hero-section">
             <div class="container" data-aos="fade-up">
-                <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fs-6 shadow-sm"><i class="fas fa-bolt me-1"></i> 全面支援 OpenClaw v3.24 最新架構</span>
+                <span id="hero-badge" class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fs-6 shadow-sm"><i class="fas fa-bolt me-1"></i> 全面支援 OpenClaw v3.24 最新架構</span>
                 <h1 class="display-3 fw-bold">OpenClaw 龍蝦升級飼料包</h1>
                 <p class="mx-auto mt-4 lead">
                     讓你的 OpenClaw AI Agents 做事更準、更穩、更有紀律。<br class="d-none d-md-block">
@@ -93,9 +93,9 @@
             <div class="container" data-aos="fade-up">
                 <div class="row text-center text-md-start align-items-center">
                     <div class="col-md-6 mb-4 mb-md-0">
-                        <h3 class="fw-bold mb-3"><i class="fas fa-info-circle text-primary me-2"></i>什麼是「龍蝦飼料」？</h3>
-                        <p class="text-muted fs-5">本專案提供一系列預配置的 <strong>行為升級腳本 (Feeds)</strong>。您可以將其視為 OpenClaw AI Agents 的「行為準則指南」，藉由注入 <strong>防護決策迴圈 (Guarded Decision Loop)</strong> 與嚴謹的執行協議，它能大幅強化您的 AI Agents 能力：</p>
-                        <ul class="text-muted text-start mb-0 ps-3 lh-lg">
+                        <h3 id="intro-title" class="fw-bold mb-3"><i class="fas fa-info-circle text-primary me-2"></i>什麼是「龍蝦飼料」？</h3>
+                        <p id="intro-desc" class="text-muted fs-5">本專案提供一系列預配置的 <strong>行為升級腳本 (Feeds)</strong>。您可以將其視為 OpenClaw AI Agents 的「行為準則指南」，藉由注入 <strong>防護決策迴圈 (Guarded Decision Loop)</strong> 與嚴謹的執行協議，它能大幅強化您的 AI Agents 能力：</p>
+                        <ul id="intro-bullets" class="text-muted text-start mb-0 ps-3 lh-lg">
                             <li><strong>條件分流 (Conditional Branches)</strong>：賦予 AI Agents 釐清、重試與報錯的決斷力，取代盲目瞎猜。</li>
                             <li><strong>強制驗證 (Mandatory Verify)</strong>：建立產出即校驗的審查文化，大幅壓制各種幻覺。</li>
                             <li><strong>安全協議 (Safety Protocols)</strong>：在修改專案前強制 Inspect 與 Backup，提供反悔保護。</li>
@@ -104,8 +104,8 @@
                     <div class="col-md-6">
                         <div class="card border-0 shadow-sm rounded-4">
                             <div class="card-body p-4 text-start">
-                                <h5 class="fw-bold mb-3"><i class="fas fa-magic text-warning me-2"></i>如何使用 Feeds？</h5>
-                                <ol class="text-muted mb-0 ps-3 lh-lg">
+                                <h5 id="howto-title" class="fw-bold mb-3"><i class="fas fa-magic text-warning me-2"></i>如何使用 Feeds？</h5>
+                                <ol id="howto-steps" class="text-muted mb-0 ps-3 lh-lg">
                                     <li>在下方的「飼料包 Buffet」中挑選所需的擴充能力。</li>
                                     <li>點擊卡片閱讀 <strong>技術規格詳情</strong>。</li>
                                     <li>點擊 <strong>「安裝指南」</strong>，複製可直接貼給 AI Agents 的 Feed 指令。</li>
@@ -187,7 +187,7 @@
                 <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
                     <a href="https://flypigai.icareu.tw/" class="footer-brand">
                         <img src="assets/images/logo.jpg" alt="FlyPig AI" width="30" height="30" class="rounded-circle me-2">
-                        FlyPig AI 開源專案
+                        <span id="footer-brand-text">FlyPig AI 開源專案</span>
                     </a>
                     <p id="footer-copyright" class="footer-copyright mb-0">
                         &copy; 2026 FlyPig AI. 專業的企業 AI 與 Martech 整合服務供應商。

@@ -5,6 +5,7 @@
 歡迎來到 OpenClaw AI Agents 升級模組庫
 
 - **[繁體中文介紹 (Traditional Chinese)](README.zh-TW.md)**
+- **[English Version](README.en.md)**
 - **標準化升級**：將複雜的執行邏輯封裝成易於解讀的指令。
 - **即時部署**：複製、貼上、發送，即可讓 AI 代理獲得新的能力。
 - **技術規範**：為 AI 提供確定性框架，減少幻覺，提升執行精準度。

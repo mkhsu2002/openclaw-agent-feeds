@@ -86,10 +86,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateStaticText() {
         const isEn = currentLang === 'en';
+
+        // Hero Badge
+        const heroBadge = document.getElementById('hero-badge');
+        if (heroBadge) heroBadge.innerHTML = isEn ?
+            '<i class="fas fa-bolt me-1"></i> Fully Optimized for OpenClaw v3.24' :
+            '<i class="fas fa-bolt me-1"></i> 全面支援 OpenClaw v3.24 最新架構';
+
+        // Hero Title & Description
         document.querySelector('.hero-section h1').innerText = isEn ? 'OpenClaw Agent Feeds' : 'OpenClaw 龍蝦升級飼料包';
-        document.querySelector('.hero-section p').innerHTML = isEn ? 
-            'Premium module library for AI System Architects.<br class="d-none d-md-block">Enhance your AI agents with precision and autonomy.' : 
-            '專為 AI 系統架構師打造的技術模組庫。透過標準化的升級組件，<br class="d-none d-md-block">顯著提升 AI 代理的執行精準度、自主性與協作能力。';
+        document.querySelector('.hero-section p').innerHTML = isEn ?
+            'Make your OpenClaw AI Agents more precise, stable, and disciplined.<br class="d-none d-md-block">Inject high-quality Feeds into your OpenClaw workspace to enhance judgment, tool usage, and file modification workflows.<br class="d-none d-md-block">It\'s not about replacing official skills/plugins — it\'s about using them more effectively.' :
+            '讓你的 OpenClaw AI Agents 做事更準、更穩、更有紀律。<br class="d-none d-md-block">將高品質 Feed 注入 OpenClaw 工作區，讓 AI Agents 在判斷、工具使用與改檔流程上更精準、更穩定。<br class="d-none d-md-block">它不是要取代 official skills/plugins，而是幫你更有效地使用它們。';
+
+        // Hero Buttons
+        const heroButtons = document.querySelectorAll('.hero-section .btn');
+        if (heroButtons.length >= 2) {
+            heroButtons[0].innerHTML = isEn ?
+                '<i class="fas fa-book-open me-2"></i>OpenClaw Official' :
+                '<i class="fas fa-book-open me-2"></i>OpenClaw 官網';
+            heroButtons[1].innerHTML = isEn ?
+                '<i class="fab fa-github me-2"></i>GitHub Repo' :
+                '<i class="fab fa-github me-2"></i>前往 GitHub Repo';
+        }
+
+        // Intro Section — Title
+        const introTitle = document.getElementById('intro-title');
+        if (introTitle) introTitle.innerHTML = isEn ?
+            '<i class="fas fa-info-circle text-primary me-2"></i>What is "Lobster Feed"?' :
+            '<i class="fas fa-info-circle text-primary me-2"></i>什麼是「龍蝦飼料」？';
+
+        // Intro Section — Description
+        const introDesc = document.getElementById('intro-desc');
+        if (introDesc) introDesc.innerHTML = isEn ?
+            'This project provides a set of pre-configured <strong>behavioral upgrade scripts (Feeds)</strong>. Think of them as a "code of conduct" for your OpenClaw AI Agents — injecting <strong>Guarded Decision Loops</strong> and rigorous execution protocols to significantly enhance your agents\' capabilities:' :
+            '本專案提供一系列預配置的 <strong>行為升級腳本 (Feeds)</strong>。您可以將其視為 OpenClaw AI Agents 的「行為準則指南」，藉由注入 <strong>防護決策迴圈 (Guarded Decision Loop)</strong> 與嚴謹的執行協議，它能大幅強化您的 AI Agents 能力：';
+
+        // Intro Section — Bullets
+        const introBullets = document.getElementById('intro-bullets');
+        if (introBullets) introBullets.innerHTML = isEn ?
+            '<li><strong>Conditional Branches</strong>: Empowers agents with the ability to clarify, retry, and report errors instead of blindly guessing.</li><li><strong>Mandatory Verify</strong>: Establishes a review culture where every output is validated, drastically reducing hallucinations.</li><li><strong>Safety Protocols</strong>: Enforces Inspect & Backup before any project modifications, providing rollback protection.</li>' :
+            '<li><strong>條件分流 (Conditional Branches)</strong>：賦予 AI Agents 釐清、重試與報錯的決斷力，取代盲目瞎猜。</li><li><strong>強制驗證 (Mandatory Verify)</strong>：建立產出即校驗的審查文化，大幅壓制各種幻覺。</li><li><strong>安全協議 (Safety Protocols)</strong>：在修改專案前強制 Inspect 與 Backup，提供反悔保護。</li>';
+
+        // How-to Card — Title
+        const howtoTitle = document.getElementById('howto-title');
+        if (howtoTitle) howtoTitle.innerHTML = isEn ?
+            '<i class="fas fa-magic text-warning me-2"></i>How to Use Feeds?' :
+            '<i class="fas fa-magic text-warning me-2"></i>如何使用 Feeds？';
+
+        // How-to Card — Steps
+        const howtoSteps = document.getElementById('howto-steps');
+        if (howtoSteps) howtoSteps.innerHTML = isEn ?
+            '<li>Browse the "Feed Buffet" below and pick the capabilities you need.</li><li>Click on a card to read the <strong>Technical Specification</strong>.</li><li>Click <strong>"Installation Guide"</strong> to copy the feed instructions ready for your AI Agent.</li><li>For one-time use, paste directly to your agent. For persistent rules, write them into your workspace\'s <code>AGENTS.md</code>.</li>' :
+            '<li>在下方的「飼料包 Buffet」中挑選所需的擴充能力。</li><li>點擊卡片閱讀 <strong>技術規格詳情</strong>。</li><li>點擊 <strong>「安裝指南」</strong>，複製可直接貼給 AI Agents 的 Feed 指令。</li><li>臨時使用時，直接貼給 AI Agents；要讓規則常駐，再寫入工作區的 <code>AGENTS.md</code>。</li>';
+
+        // Buffet Section
         document.querySelector('.buffet-header h2').innerText = isEn ? 'Feed Buffet' : '飼料包 Buffet';
         document.querySelector('.buffet-header p').innerText = isEn ? 'Choose carefully based on your model version' : '請遵照最低建議模型版本慎選餵食';
         if (searchInput) searchInput.placeholder = isEn ? 'Search modules...' : '搜尋模組名稱或描述...';
@@ -137,6 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navFb) navFb.innerHTML = `<i class="fab fa-facebook-f me-2"></i> ${isEn ? 'Follow FB' : '追蹤 FlyPig FB'}`;
 
         // Footer
+        const footerBrandText = document.getElementById('footer-brand-text');
+        if (footerBrandText) footerBrandText.innerText = isEn ? 'FlyPig AI Open Source' : 'FlyPig AI 開源專案';
+
         const footerCopyright = document.getElementById('footer-copyright');
         const footerPrivacy = document.getElementById('footer-privacy');
         const footerTerms = document.getElementById('footer-terms');
