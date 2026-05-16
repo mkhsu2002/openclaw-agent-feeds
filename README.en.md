@@ -95,6 +95,8 @@ Recommended flow:
 
 See [OpenClaw usage](docs/openclaw-usage.md).
 
+For readers who want a more practical OpenClaw learning path, especially the "raising lobsters" workflow and usage mindset, see the [OpenClaw knowledge base](https://flypigai.icareu.tw/openclaw-knowledge).
+
 ## Hermes Agent Usage
 
 Hermes Agent compatibility is exploratory and conceptual unless verified in a real Hermes environment.
@@ -102,6 +104,8 @@ Hermes Agent compatibility is exploratory and conceptual unless verified in a re
 Hermes public materials emphasize learning loops, memory, skill creation from experience, and long-running agent behavior. Feed-style prompts may be useful as goal seeds, self-improvement seeds, skill-building prompts, or workflow bootstrapping prompts.
 
 Do not claim native Hermes support for a Feed until it has been tested. See [Hermes Agent notes](docs/hermes-agent-notes.md).
+
+For deeper Hermes Agent usage patterns and field notes, see the [Hermes Agent guide](https://flypigai.icareu.tw/hermes-agent-guide).
 
 ## Codex and IDE Agent Usage
 

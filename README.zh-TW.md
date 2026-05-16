@@ -95,6 +95,8 @@ OpenClaw 是本 repo 的主要目標環境。公開文件顯示 OpenClaw 目前�
 
 詳見 [OpenClaw 使用方式](docs/openclaw-usage.md)。
 
+如果你對 OpenClaw「養龍蝦」的實務用法、操作心法與延伸學習有興趣，也可以參考：[OpenClaw 知識庫](https://flypigai.icareu.tw/openclaw-knowledge)。
+
 ## Hermes Agent Usage
 
 Hermes Agent 相容性目前屬於探索性與概念性，除非已在實際 Hermes 環境驗證。
@@ -102,6 +104,8 @@ Hermes Agent 相容性目前屬於探索性與概念性，除非已在實際 Her
 Hermes 的公開資料強調 learning loop、memory、從經驗建立 Skills，以及 long-running agent behavior。Feed-style prompts 可能適合作為 goal seeds、self-improvement seeds、skill-building prompts 或 workflow bootstrapping prompts。
 
 未測試前，不應宣稱任何 Feed 具有 Hermes 原生支援。詳見 [Hermes Agent notes](docs/hermes-agent-notes.md)。
+
+如果你想進一步理解 Hermes Agent 的深度應用方式與實務觀察，可以參考：[Hermes Agent 指南](https://flypigai.icareu.tw/hermes-agent-guide)。
 
 ## Codex and IDE Agent Usage
 

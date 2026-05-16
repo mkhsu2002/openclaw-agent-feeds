@@ -78,6 +78,10 @@ OpenClaw 是主要目標環境。建議在高階推理模型的 OpenClaw session
 
 See / 詳見: [docs/openclaw-usage.md](docs/openclaw-usage.md)
 
+For readers who want a more practical OpenClaw learning path, especially the "raising lobsters" workflow and usage mindset, see [OpenClaw knowledge base](https://flypigai.icareu.tw/openclaw-knowledge).
+
+如果你對 OpenClaw「養龍蝦」的實務用法、操作心法與延伸學習有興趣，也可以參考：[OpenClaw 知識庫](https://flypigai.icareu.tw/openclaw-knowledge)。
+
 ## Hermes Agent Usage
 
 Hermes Agent compatibility is exploratory unless verified. Hermes appears to emphasize self-improvement, memory, skill creation from experience, and long-running agent behavior. Feeds may be useful as goal seeds, skill-building seeds, memory-shaping prompts, or workflow bootstrapping prompts.
@@ -85,6 +89,10 @@ Hermes Agent compatibility is exploratory unless verified. Hermes appears to emp
 Hermes Agent 相容性目前屬探索性。Feeds 可作為 goal seeds、learning seeds、skill-building seeds、memory-shaping prompts 或 workflow bootstrapping prompts，但未測試前不應宣稱原生支援。
 
 See / 詳見: [docs/hermes-agent-notes.md](docs/hermes-agent-notes.md)
+
+For deeper Hermes Agent usage patterns and field notes, see [Hermes Agent guide](https://flypigai.icareu.tw/hermes-agent-guide).
+
+如果你想進一步理解 Hermes Agent 的深度應用方式與實務觀察，可以參考：[Hermes Agent 指南](https://flypigai.icareu.tw/hermes-agent-guide)。
 
 ## Codex and IDE Agent Usage
 
