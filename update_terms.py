@@ -1,45 +1,58 @@
 import os
 
-replacements = {
-    "真實狀態機": "防護決策迴圈 (Guarded Decision Loop)",
-    "True State Machine": "Guarded Decision Loop",
-    "變異目標與協議 (Mutation Target)": "行為升級與協議 (Behavior Upgrade Target)",
-    "變異目標與協議 (Mutation Protocol)": "行為升級與協議 (Behavior Upgrade Target)",
-    "Mutation Target": "Behavior Upgrade Target",
-    "出廠變異層": "基底操作層 (Baseline Operating Layer)",
-    "factory mutation layer": "baseline operating layer",
-    "狀態機腳本": "執行協議腳本",
-    "狀態機流轉": "防護決策迴圈",
-    "隱含狀態機": "決策迴圈",
-    "狀態機": "防護決策迴圈",
-    "state machine transitions": "guarded decision looping",
-    "state machine": "decision loop",
-    "State Machine": "Decision Loop"
-}
+"""
+One-off helper for v0.3 documentation audits.
 
-value_zh = "這使代理在規劃、工具使用、回應結構與結果驗證上更穩定、更精確、更少臆測。"
-value_en = "This significantly makes the agent more stable, precise, and less prone to guessing in planning, tool usage, response structuring, and result verification."
+This script reports likely legacy positioning terms so maintainers can review
+them manually. It does not rewrite files because some terms are valid in
+negative explanatory context, such as "Feeds are not protocols."
+"""
 
-base_dir = '/Users/mkhsu/Documents/FlyPigAI/openclaw-agent-feeds/feeds'
+review_terms = [
+    "V" + "2.0",
+    "v" + "2.0",
+    "Mutation " + "Protocol",
+    "Execution " + "Protocol Script",
+    "behavioral upgrade scripts",
+    "deterministic " + "protocol",
+]
 
-for root, _, files in os.walk(base_dir):
-    for file in files:
-        if file.endswith('.md'):
-            filepath = os.path.join(root, file)
-            with open(filepath, 'r', encoding='utf-8') as f:
-                content = f.read()
+base_dir = os.path.dirname(os.path.abspath(__file__))
+targets = [
+    os.path.join(base_dir, "README.md"),
+    os.path.join(base_dir, "README.en.md"),
+    os.path.join(base_dir, "README.zh-TW.md"),
+    os.path.join(base_dir, "CONTRIBUTING.md"),
+    os.path.join(base_dir, "feeds"),
+    os.path.join(base_dir, "docs"),
+]
 
-            original = content
-            for old, new in replacements.items():
-                content = content.replace(old, new)
+for target in targets:
+    if os.path.isfile(target):
+        files = [target]
+    else:
+        files = []
+        for root, _, names in os.walk(target):
+            for name in names:
+                if name.endswith((".md", ".json", ".html", ".js")):
+                    files.append(os.path.join(root, name))
 
-            # Insert value proposition after '### 📄 模組簡介' or '### 📄 Module Overview'
-            if file == 'overview.md' and value_zh not in content:
-                content = content.replace('### 📄 模組簡介\n', f'### 📄 模組簡介\n{value_zh}\n\n')
-            elif file == 'overview.en.md' and value_en not in content:
-                content = content.replace('### 📄 Module Overview\n', f'### 📄 Module Overview\n{value_en}\n\n')
+    for filepath in files:
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
 
-            if content != original:
-                with open(filepath, 'w', encoding='utf-8') as f:
-                    f.write(content)
-                print(f"Updated {filepath}")
+        for term in review_terms:
+            if term in content:
+                if term == "deterministic " + "protocol":
+                    allowed = (
+                        "not a deterministic protocol" in content
+                        or "not deterministic protocols" in content
+                    )
+                    without_allowed = (
+                        content
+                        .replace("not a deterministic protocol", "")
+                        .replace("not deterministic protocols", "")
+                    )
+                    if term not in without_allowed:
+                        continue
+                print(f"Review {filepath}: {term}")

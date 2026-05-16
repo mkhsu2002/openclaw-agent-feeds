@@ -1,124 +1,192 @@
-# OpenClaw Agent Feeds V2.0
+# OpenClaw Agent Feeds
 
-🔥 **Fully Optimized for OpenClaw v3.24 Architecture** 🔥
+Optimized prompt seeds for building better AI agent skills, instructions, and workflows.
 
-### 🦞 Project Philosophy: What is "Lobster Feed"?
-Within the OpenClaw ecosystem, formal capabilities are already handled by Skills, Plugins, and Bundles. **"Lobster Feeds"**, on the other hand, are designed as a **beginner-friendly feed library**, functioning as both a **behavioral upgrade system** and a **safe mutation layer for OpenClaw workspaces**.
+OpenClaw Skills teach agents what they can do.
+Agent Feeds help users explain what they want the agent to understand, consider, build, and avoid.
 
-Rather than just a collection of prompts, feeds are a powerful mechanism that makes OpenClaw Agents (affectionately known as "Lobsters") smarter, more accurate, and more stable. The core concept is to enable users to "feed" these upgrades directly to their OpenClaw workspace via IM apps (like LINE, Telegram, or FB Messenger) for seamless enhancement:
+A Feed is a carefully designed prompt seed intended for high-capability AI agent sessions. It helps the agent interpret user intent, inspect the current workspace, reason about the safest and most useful implementation path, and generate or update Skills, instructions, settings, checklists, or workflows when appropriate.
 
-- **Standardized Upgrades**: Encapsulates complex execution logic into easily interpretable instructions.
-- **Instant Deployment**: Simply copy, paste, and send to grant your AI agent new capabilities instantly.
-- **Technical Rigor**: Provides deterministic frameworks for AI, minimizing hallucinations and maximizing execution precision.
+Feeds are not protocols, installers, or executable packages. They are prompt-based communication seeds between human intent and agent execution.
 
-This project serves as a high-quality "Feed Buffet," allowing developers and architects to select the most suitable technical enhancement systems for their AI Agents.
+Current version: **v0.3**
 
-### 🎯 Who is this project for?
-- **OpenClaw beginners**: For those who want better, smarter prompts without learning the full skill/plugin development stack.
-- **Advanced users & architects**: For those who want reusable, battle-tested feed design patterns to orchestrate agents.
-- **Open-source contributors**: For anyone interested in prompt systems, agent workflows, and safe mutation protocols.
+Official site: [https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
 
-### 🌟 Example: Before / After
-Why install a feed? Compare the execution differences:
-- **❌ Without feed**: Vague answers, guesswork, lengthy apologies, and dangerous operational hallucinations.
-- **✅ With Universal Core L0 feed**: Structured logic, verified execution, absolute precision, and immediate safety interception!
+## What is a Feed?
 
-### 📐 Design Principles (What makes a good feed)
-We are building a "Methodology" repository, not just another prompt compilation. A good feed:
-1. **Improves behavior**, not just tone
-2. **Reduces hallucination** and guesswork natively
-3. **Encourages safe, minimal changes** to file systems
-4. **Works with OpenClaw skills/plugins** instead of attempting to replace them
-5. **Stays readable and reusable** as standardized Markdown code
+A Feed is an optimized prompt seed for a capable AI agent. It gives the agent structured context about the user's goal, constraints, desired workflow, safety expectations, and skill-building intent.
 
-### 🛠 v0.1 Key Highlights
-- **Architecture Optimization**: Fully decoupled logic and styles with a data-driven frontend.
-- **Rendering Enhancement**: Integrated Marked.js for precise technical documentation display.
-- **Responsive UI**: Optimized for mobile devices for checking instructions on the go.
-- **Core Library**: Pre-loaded with a list of 27 professional AI agent upgrade modules.
+Feeds can help an agent:
 
----
+- inspect a workspace before proposing changes
+- decide whether an existing Skill, instruction file, checklist, or workflow should be used
+- propose new Skills or updates to existing Skills
+- convert fuzzy goals into concrete plans
+- document assumptions, risks, and review steps
+- create safer task kickoff prompts for agentic work
 
-## Quick Start
+Feeds remain prompts. Their behavior depends on the model, tools, workspace context, and user review.
 
-1. Visit [index.html](index.html) or deploy to a static host.
-2. Browse the feed list and click "View Spec".
-3. Copy and send the instructions to your OpenClaw agent according to the documentation.
+## What Feeds Are Not
 
+Feeds are not deterministic protocols.
+Feeds are not automatic installers.
+Feeds are not replacements for OpenClaw Skills.
+Feeds are not guaranteed to produce identical results across different models.
+Feeds are not meant to bypass user review.
 
-## 🛒 Lobster Feed Library
+A Feed is an optimized prompt seed. It works best when interpreted by a capable reasoning model inside an agent environment with appropriate tools and context.
 
-### 🔹 Core Agent Upgrades
-- **Universal Core Feed (L0)** `[Beginner]` [NEW] - [Overview](feeds/universal-core/overview.en.md) | [Install Guide](feeds/universal-core/installation_guide.en.md)
-- **OpenClaw Deterministic Framework** `[Expert]` - [Overview](feeds/deterministic-framework/overview.en.md) | [Install Guide](feeds/deterministic-framework/installation_guide.en.md)
-- **Hallucination Guardrails** `[Beginner]` - [Overview](feeds/hallucination-guardrails/overview.en.md) | [Install Guide](feeds/hallucination-guardrails/installation_guide.en.md)
-- **Tool-Driven State Machine** `[Beginner]` - [Overview](feeds/tool-driven-state/overview.en.md) | [Install Guide](feeds/tool-driven-state/installation_guide.en.md)
-- **Multi-Agent Orchestrator** `[Expert]` - [Overview](feeds/multi-agent-coord/overview.en.md) | [Install Guide](feeds/multi-agent-coord/installation_guide.en.md)
-- **Semantic Memory Boost** `[Beginner]` - [Overview](feeds/semantic-memory-boost/overview.en.md) | [Install Guide](feeds/semantic-memory-boost/installation_guide.en.md)
-- **Protocol Enforcer** `[Expert]` - [Overview](feeds/protocol-enforcer/overview.en.md) | [Install Guide](feeds/protocol-enforcer/installation_guide.en.md)
-- **Deep Intent Clarifier** `[Advanced]` [NEW] - [Overview](feeds/intent-clarifier/overview.en.md) | [Install Guide](feeds/intent-clarifier/installation_guide.en.md)
+## Why Feeds Matter Even When Skills Exist
 
-### 🔹 Multimodal & Security [NEW]
-- **Visual Auditor Agent** `[Advanced]` - [Overview](feeds/visual-auditor/overview.en.md) | [Install Guide](feeds/visual-auditor/installation_guide.en.md)
-- **Voice-to-Logic Extractor** `[Beginner]` - [Overview](feeds/voice-to-logic/overview.en.md) | [Install Guide](feeds/voice-to-logic/installation_guide.en.md)
-- **PII Masking Guardrails** `[Expert]` - [Overview](feeds/pii-masking/overview.en.md) | [Install Guide](feeds/pii-masking/installation_guide.en.md)
-- **Global Compliance Wrapper** `[Expert]` - [Overview](feeds/global-compliance/overview.en.md) | [Install Guide](feeds/global-compliance/installation_guide.en.md)
+Skills are capability packages.
+Feeds are prompt seeds that help agents decide how to create, update, combine, or use capabilities.
 
-### 🔹 Vertical Specialties [NEW]
-- **Legal Precision Analyst** `[Expert]` - [Overview](feeds/legal-precision/overview.en.md) | [Install Guide](feeds/legal-precision/installation_guide.en.md)
-- **Medical Research Pro** `[Expert]` - [Overview](feeds/medical-research/overview.en.md) | [Install Guide](feeds/medical-research/installation_guide.en.md)
+Skills answer:
+**What can the agent do?**
 
-### 🔹 Automation Packs
-- **Autonomous Research Agent** `[Advanced]` - [Overview](feeds/autonomous-research/overview.en.md) | [Install Guide](feeds/autonomous-research/installation_guide.en.md)
-- **AI SEO Content Factory** `[Advanced]` - [Overview](feeds/ai-seo-factory/overview.en.md) | [Install Guide](feeds/ai-seo-factory/installation_guide.en.md)
-- **Affiliate Marketing Auto** `[Beginner]` - [Overview](feeds/affiliate-marketing-auto/overview.en.md) | [Install Guide](feeds/affiliate-marketing-auto/installation_guide.en.md)
-- **Lead Gen Automation** `[Beginner]` - [Overview](feeds/lead-gen-automation/overview.en.md) | [Install Guide](feeds/lead-gen-automation/installation_guide.en.md)
-- **Social Content Engine** `[Beginner]` - [Overview](feeds/social-content-engine/overview.en.md) | [Install Guide](feeds/social-content-engine/installation_guide.en.md)
+Feeds answer:
+**How should the agent understand this task, inspect the environment, decide what capabilities are needed, and safely build or use them?**
 
-### 🔹 Developer Tools
-- **Software Project Architect** `[Beginner]` - [Overview](feeds/software-builder/overview.en.md) | [Install Guide](feeds/software-builder/installation_guide.en.md)
-- **Code Debugger Agent** `[Beginner]` - [Overview](feeds/code-debugger/overview.en.md) | [Install Guide](feeds/code-debugger/installation_guide.en.md)
-- **Doc Generator** `[Beginner]` - [Overview](feeds/doc-generator/overview.en.md) | [Install Guide](feeds/doc-generator/installation_guide.en.md)
-- **Test Suite Architect** `[Beginner]` - [Overview](feeds/test-suite-architect/overview.en.md) | [Install Guide](feeds/test-suite-architect/installation_guide.en.md)
+A Feed may lead to:
 
-### 🔹 Business Intelligence
-- **Market Research Auto** `[Advanced]` - [Overview](feeds/market-research/overview.en.md) | [Install Guide](feeds/market-research/installation_guide.en.md)
-- **Competitive Intel Agent** `[Advanced]` - [Overview](feeds/competitive-intel/overview.en.md) | [Install Guide](feeds/competitive-intel/installation_guide.en.md)
-- **Data Collection Agent** `[Beginner]` - [Overview](feeds/data-collection/overview.en.md) | [Install Guide](feeds/data-collection/installation_guide.en.md)
-- **Data Analysis Flow** `[Advanced]` - [Overview](feeds/data-analysis-flow/overview.en.md) | [Install Guide](feeds/data-analysis-flow/installation_guide.en.md)
-- **Threat Intel Monitor** `[Advanced]` - [Overview](feeds/threat-intel-monitor/overview.en.md) | [Install Guide](feeds/threat-intel-monitor/installation_guide.en.md)
+- new Skills
+- updated Skills
+- `AGENTS.md` instructions
+- workspace rules
+- setup checklists
+- safety checklists
+- task templates
+- recurring workflows
+- documentation updates
 
----
+But Feeds themselves remain prompts.
 
-## 🗺️ Public Roadmap
-We are actively evolving the ecosystem. Incoming features:
-- Unify all feeds under the new protocol structure
-- Split feeds structurally into Training vs Mutation paths
-- Add English parity for all top Chinese feeds
-- Improve beginner onboarding and quick-install methods
-- Add example before/after outputs for visual demonstration
+## Recommended Model Level
 
-## 🤝 How to contribute
-We highly encourage open-source engagement! Here is how you can help:
-- 🐛 **Report a bug**
-- 💡 **Suggest a new feed**
-- 📝 **Improve wording / docs**
-- 🛠️ **Submit a pull request for an existing feed**
+Feeds work best with high-capability reasoning models.
 
-👉 For detailed rules, check our **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+A Feed is not deterministic. Different LLMs may react differently to the same Feed.
 
-### 🐣 Good first contribution ideas
-Unsure where to begin? Try grabbing one of these bite-sized tasks:
-- Translate one feed from Chinese to English (or vice versa)
-- Improve one installation guide formatting
-- Rewrite one legacy feed to match the new V2.0 protocol style
-- Add model compatibility notes
-- Improve one example screenshot for the documentation
+For best results:
 
-**💬 Have an idea for a new feed, refinement, or category? [Open an issue first!](https://github.com/mkhsu2002/openclaw-agent-feeds/issues)**
+- use a strong reasoning model when installing or interpreting a Feed
+- use a strong reasoning model when generating or modifying Skills
+- use lower-cost or local models only after the Feed has been converted into stable instructions, checklists, or Skills
+- always review generated Skills before allowing them to execute commands, modify files, call APIs, or access external services
 
----
-### 🚀 Official Website: [https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
-[中文版本](README.zh-TW.md) | [MIT License](LICENSE)
+Do not assume every model will follow a Feed equally well. Treat model-dependent behavior as normal and review important outputs carefully.
 
-&copy; 2026 FlyPig AI Open Source Project. All rights reserved.
+## OpenClaw Usage
+
+OpenClaw is the primary target environment for this repository. Public OpenClaw docs describe a workspace model, Skills, ClawHub skill discovery and install flows, plugins, channels, and security review around skills and tool access.
+
+Recommended flow:
+
+1. Start a high-capability OpenClaw session.
+2. Paste the Feed.
+3. Ask OpenClaw to inspect the current workspace.
+4. Ask OpenClaw to propose a plan before editing.
+5. Review proposed Skill, instruction, checklist, or workflow changes.
+6. Approve safe changes only.
+7. Test the generated Skill or workflow.
+8. Commit changes with a clear changelog entry.
+
+See [OpenClaw usage](docs/openclaw-usage.md).
+
+## Hermes Agent Usage
+
+Hermes Agent compatibility is exploratory and conceptual unless verified in a real Hermes environment.
+
+Hermes public materials emphasize learning loops, memory, skill creation from experience, and long-running agent behavior. Feed-style prompts may be useful as goal seeds, self-improvement seeds, skill-building prompts, or workflow bootstrapping prompts.
+
+Do not claim native Hermes support for a Feed until it has been tested. See [Hermes Agent notes](docs/hermes-agent-notes.md).
+
+## Codex and IDE Agent Usage
+
+Codex can use `AGENTS.md` for repo-level guidance. Feeds can be adapted into `AGENTS.md` sections, setup prompts, task kickoff prompts, or review checklists, but they are not the same thing as `AGENTS.md`.
+
+For IDE agents such as Codex, Claude Code, Cursor, Windsurf, Devin, GitHub Copilot coding agents, Gemini CLI, and similar tools, compatibility depends on workspace access, instruction loading, tool support, and model reasoning quality.
+
+See [Codex and IDE agents](docs/codex-and-ide-agents.md).
+
+## Feed Types
+
+- **Baseline Feed**: general behavior tuning, safety, and reasoning discipline
+- **Skill-Building Feed**: helps an agent create or improve Skills
+- **Workspace Bootstrapping Feed**: helps an agent inspect and prepare a workspace
+- **Workflow Feed**: helps create repeatable workflows
+- **Domain Expert Feed**: communicates domain-specific operating assumptions
+- **Safety Feed**: adds review, confirmation, rollback, and risk controls
+- **Cross-Agent Feed**: designed for multiple agent environments
+
+## Recommended Feed Format
+
+Each Feed should be lightweight and practical:
+
+- Purpose
+- Recommended Agent / Model Level
+- User Intent
+- Best Used With
+- Expected Agent Behavior
+- Workspace Inspection Guidance
+- Skill-Building Guidance
+- Safety Guidance
+- Suggested Output
+- Feed Prompt
+
+See [Feed format](docs/feed-format.md).
+
+## Safety and Review
+
+Feeds may cause high-capability agents to propose or perform significant changes. Users should review before deleting files, rewriting architecture, installing dependencies, running shell commands, accessing credentials, calling external APIs, writing to databases, deploying to production, publishing packages, pushing to main, modifying security settings, or modifying billing and payment systems.
+
+Recommended behavior: inspect first, plan before edit, show changed files, explain risks, ask confirmation for high-risk operations, provide rollback guidance, avoid hidden mutations, do not fabricate tool results, and do not claim changes were made unless verified.
+
+See [Safety and review](docs/safety-and-review.md).
+
+## Repository Structure
+
+```text
+.
+├── index.html
+├── assets/
+│   ├── css/style.css
+│   └── js/main.js
+├── feeds/
+│   ├── packs.json
+│   └── <feed-id>/
+│       ├── README.md
+│       ├── feed.md
+│       ├── overview.md
+│       ├── overview.en.md
+│       ├── installation_guide.md
+│       └── installation_guide.en.md
+├── docs/
+│   ├── feed-format.md
+│   ├── openclaw-usage.md
+│   ├── agent-compatibility.md
+│   ├── hermes-agent-notes.md
+│   ├── codex-and-ide-agents.md
+│   ├── safety-and-review.md
+│   └── roadmap.md
+└── CHANGELOG.md
+```
+
+## Roadmap
+
+See [Roadmap](docs/roadmap.md).
+
+## Version v0.3 Notes
+
+v0.3 repositions OpenClaw Agent Feeds as optimized prompt seeds for high-capability AI agents. The update clarifies the relationship between Feeds and Skills, adds model capability guidance, expands compatibility notes for OpenClaw, Hermes Agent, Codex, and IDE agents, and unifies English and Traditional Chinese documentation.
+
+## Sources Used for v0.3 Alignment
+
+- [OpenClaw docs](https://openclawdoc.com/)
+- [OpenClaw ClawHub docs](https://docs.openclaw.ai/tools/clawhub)
+- [Hermes Agent learning loop](https://hermes-agent.ai/features/learning-loop)
+- [Codex AGENTS.md guide](https://developers.openai.com/codex/guides/agents-md)
+
+[繁體中文](README.zh-TW.md) | [MIT License](LICENSE)

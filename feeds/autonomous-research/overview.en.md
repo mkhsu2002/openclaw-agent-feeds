@@ -1,15 +1,22 @@
-# 🧪 [Mutation Feed] Autonomous Research Engine
+## v0.3 Positioning Note
+
+This Feed is an optimized prompt seed, not a deterministic protocol, installer, or executable package. Use it with a high-capability reasoning model and review before allowing the agent to modify files, create Skills, call APIs, deploy, or touch sensitive data.
+
+**Feed type**: Workflow Feed
+
+
+# 🧪 [Prompt Seed] Autonomous Research Engine
 
 ### 📄 Module Overview
 This significantly makes the agent more stable, precise, and less prone to guessing in planning, tool usage, response structuring, and result verification.
 
-This feed pack (Mutation Feed) caters to tasks demanding **deep data mining and safe report writing**. It upgrades the agent into a researcher possessing a "Cross-Validation Decision Loop." Upon encountering inconsistent data, the decision loop proactively intervenes to conduct secondary verifications, safely generating reports while strictly adhering to file-writing protocols.
+This feed pack (Prompt Seed) caters to tasks demanding **deep data mining and safe report writing**. It upgrades the agent into a researcher possessing a "Cross-Validation Decision Loop." Upon encountering inconsistent data, the decision loop proactively intervenes to conduct secondary verifications, safely generating reports while strictly adhering to file-writing guidance.
 
 ### ⚙️ Skill Synergy
 - **Recommended Skills**: `search_web`, `read_url`, `write_to_file`, `list_dir`
 - **Synergy Effect**: Seamlessly embeds retrieval tools within the Verify state, ensuring only double-verified golden information `[VERIFIED_SRC]` permeates into the Execute report phase, averting any interference with core project code.
 
-### 🚀 Behavior Upgrade Target
+### 🚀 Use Case and Expected Behavior
 1. **Conditional Branches (Decision Loop)**: Triggers the Clarification/Validation branch to resolve conflicts when contradictory data points arise.
 2. **Mandatory Verify**: A secondary source must be checked for every critical datapoint imported; upon completing the file, the presence of a reference list must be verified.
 3. **Check Tooling**: Mandates an initial scan to check if a prior report exists locally (`Inspect First`) and assesses networking skills.

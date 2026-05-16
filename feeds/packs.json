@@ -4,279 +4,335 @@
     "name": "龍蝦通用核心飼料 (L0)",
     "name_en": "Universal Core Feed (L0)",
     "category": "核心代理升級",
-    "description": "所有工作區的基底變異層。定義行為守則、專業語調與標準思維狀態機，確保任何情境下的穩定起點。",
-    "description_en": "Baseline mutation layer for all workspaces. Defines behavioral boundaries, professional tone, and standard thought state machines.",
+    "description": "基線提示詞種子，幫助高能力 Agent 在改檔、建立 Skills 或調整 workspace 行為前，更謹慎地理解意圖、檢查上下文並提出安全計畫。",
+    "description_en": "Baseline prompt seed that helps a capable agent reason carefully before changing files, creating Skills, or modifying workspace behavior.",
     "path": "universal-core/",
-    "level": "入門"
+    "level": "入門",
+    "type": "基線 Feed",
+    "type_en": "Baseline Feed"
   },
   {
     "id": "deterministic-framework",
-    "name": "龍蝦確定性代理框架",
-    "name_en": "OpenClaw Deterministic Framework",
+    "name": "高精度推理提示詞種子",
+    "name_en": "High-Precision Reasoning Feed",
     "category": "核心代理升級",
-    "description": "決策邏輯約束協議。為複雜任務實施嚴苛的邏輯分支與可重複執行路徑，消除隨機性。",
-    "description_en": "Decision logic constraint protocol. Enforces strict logical branching for complex tasks to eliminate execution randomness.",
+    "description": "高精度推理提示詞種子，幫助 Agent 將模糊任務轉成可審查的約束、假設與驗證步驟，但不保證跨模型完全一致。",
+    "description_en": "High-precision reasoning prompt seed that helps an agent turn vague tasks into reviewable constraints, assumptions, and validation steps without claiming deterministic output.",
     "path": "deterministic-framework/",
-    "level": "專家"
+    "level": "專家",
+    "type": "基線 Feed",
+    "type_en": "Baseline Feed"
   },
   {
     "id": "hallucination-guardrails",
     "name": "反幻覺邏輯護欄",
     "name_en": "Hallucination Guardrails",
     "category": "核心代理升級",
-    "description": "事實查核安全護欄。強制代理在輸出前進行交叉驗證，需協同 Browse/Search 技能阻斷事實幻覺。",
-    "description_en": "Fact-checking security guardrails. Forces pre-output cross-validation, syncing with Browse/Search skills to block hallucinations.",
+    "description": "事實查核提示詞種子，鼓勵 Agent 標示不確定性、引用來源並在缺乏證據時停止猜測。",
+    "description_en": "Fact-checking prompt seed that encourages agents to mark uncertainty, cite sources, and stop guessing when evidence is insufficient.",
     "path": "hallucination-guardrails/",
-    "level": "入門"
+    "level": "入門",
+    "type": "安全 Feed",
+    "type_en": "Safety Feed"
   },
   {
     "id": "tool-driven-state",
-    "name": "工具驅動狀態機",
-    "name_en": "Tool-Driven State Machine",
+    "name": "工具依賴提示詞種子",
+    "name_en": "Tool-Grounded Feed",
     "category": "核心代理升級",
-    "description": "工具依賴型狀態機。將代理行為鎖定為特定工具輸出驅動的流轉邏輯，避免跨越權限猜測。",
-    "description_en": "Tool-dependent state machine. Locks agent behavior into transition logic driven purely by tool outputs.",
+    "description": "工具依賴提示詞種子，幫助 Agent 將輸出限制在可查證工具結果與 workspace context 內。",
+    "description_en": "Tool-grounding prompt seed that helps agents keep outputs tied to verifiable tool results and workspace context.",
     "path": "tool-driven-state/",
-    "level": "入門"
+    "level": "入門",
+    "type": "安全 Feed",
+    "type_en": "Safety Feed"
   },
   {
     "id": "autonomous-research",
     "name": "自主研究代理",
     "name_en": "Autonomous Research Agent",
     "category": "自動化擴展包",
-    "description": "自主研究行為掛載。注入端到端的研究執行協議，指導代理如何自動化地收集、綜合並總結資訊。",
-    "description_en": "Autonomous research behavioral hook. Injects end-to-end research protocols detailing how to collect, synthesize, and summarize data.",
+    "description": "研究工作流提示詞種子，幫助 Agent 規劃資料來源、交叉查核、產出報告並標示限制。",
+    "description_en": "Research workflow prompt seed for source planning, cross-checking, report generation, and limitation marking.",
     "path": "autonomous-research/",
-    "level": "進階"
+    "level": "進階",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "ai-seo-factory",
     "name": "AI SEO 內容工廠",
     "name_en": "AI SEO Content Factory",
     "category": "自動化擴展包",
-    "description": "SEO 內容流水線約束。賦予代理嚴格的關鍵字優化與內容生產標準 SOP，需搭配 Search 技能使用。",
-    "description_en": "SEO content pipeline constraints. Imparts strict SOPs for keyword optimization and content generation, best paired with Search skills.",
+    "description": "SEO 內容工作流提示詞種子，幫助 Agent 先研究、再撰寫、再審查 E-E-A-T 與資料來源。",
+    "description_en": "SEO content workflow prompt seed that guides agents to research first, write second, and review E-E-A-T plus source quality.",
     "path": "ai-seo-factory/",
-    "level": "進階"
+    "level": "進階",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "affiliate-marketing-auto",
     "name": "聯盟行銷自動化",
     "name_en": "Affiliate Marketing Auto",
     "category": "自動化擴展包",
-    "description": "聯盟行銷狀態機。引導代理執行產品分析到多通路分發的標準化轉換流程。",
-    "description_en": "Affiliate marketing state machine. Guides agents through a standardized funnel from product analysis to multi-channel distribution.",
+    "description": "聯盟行銷工作流提示詞種子，幫助 Agent 審查產品資訊、追蹤連結與揭露需求後再產出內容。",
+    "description_en": "Affiliate marketing workflow prompt seed for reviewing product facts, tracking links, and disclosure needs before content generation.",
     "path": "affiliate-marketing-auto/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "software-builder",
     "name": "軟體專案架構代理",
     "name_en": "Software Project Architect",
     "category": "開發者工具包",
-    "description": "軟體架構實施協議。為工作區注入從系統設計到代碼生成的標準化開發邏輯與規範框架。",
-    "description_en": "Software architecture implementation protocols. Injects standardized development logic from system design to code generation.",
+    "description": "Skill 建置與軟體工作空間提示詞種子，幫助 Agent 檢查 repo、提出架構計畫並安全建立 Skills 或指令。",
+    "description_en": "Skill-building and software workspace prompt seed for repo inspection, architecture planning, and safe Skill or instruction creation.",
     "path": "software-builder/",
-    "level": "入門"
+    "level": "入門",
+    "type": "Skill 建置 Feed",
+    "type_en": "Skill-Building Feed"
   },
   {
     "id": "code-debugger",
     "name": "代碼除錯代理",
     "name_en": "Code Debugger Agent",
     "category": "開發者工具包",
-    "description": "語義除錯護欄。強制工作區採用追蹤分析與錯誤定位的標準化 Debug 流程。",
-    "description_en": "Semantic debugging guardrails. Forces workspaces to adopt standard trace analysis and bug localization workflows.",
+    "description": "除錯工作流提示詞種子，幫助 Agent 先重現與定位問題，再提出最小變更修復。",
+    "description_en": "Debugging workflow prompt seed that guides agents to reproduce, localize, and propose minimal fixes.",
     "path": "code-debugger/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "doc-generator",
     "name": "文檔自動生成器",
     "name_en": "Doc Generator",
     "category": "開發者工具包",
-    "description": "文檔逆向工程邏輯。規範代理如何從源代碼中萃取模式並結構化生成 API 參考資料。",
-    "description_en": "Documentation reverse-engineering logic. Standardizes how agents extract patterns to generate structured API references.",
+    "description": "文件生成工作流提示詞種子，幫助 Agent 從真實程式碼與 repo 結構產出文件。",
+    "description_en": "Documentation workflow prompt seed that helps agents generate docs from real code and repository structure.",
     "path": "doc-generator/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "market-research",
     "name": "市場研究自動化",
     "name_en": "Market Research Auto",
     "category": "商業智能包",
-    "description": "市場趨勢監控狀態機。指導代理如何持續且準確地從多方來源提取消費者情緒與經濟指標。",
-    "description_en": "Market trend monitoring state machine. Guides structured extraction of consumer sentiment and economic indicators.",
+    "description": "市場研究提示詞種子，幫助 Agent 限縮研究範圍、查核來源並避免捏造市場數據。",
+    "description_en": "Market research prompt seed for scoping, source checks, and avoiding fabricated market numbers.",
     "path": "market-research/",
-    "level": "進階"
+    "level": "進階",
+    "type": "領域專家 Feed",
+    "type_en": "Domain Expert Feed"
   },
   {
     "id": "competitive-intel",
     "name": "競爭情報代理",
     "name_en": "Competitive Intel Agent",
     "category": "商業智能包",
-    "description": "競品分析協議。為代理植入系統性的競品功能差距對比與策略追蹤思維。",
-    "description_en": "Competitive gap analysis protocol. Implants systematic thinking for comparing opponent features and strategic pivots.",
+    "description": "競爭情報提示詞種子，幫助 Agent 建立客觀比較矩陣並標示公開來源限制。",
+    "description_en": "Competitive intelligence prompt seed for objective comparison matrices and public-source limitations.",
     "path": "competitive-intel/",
-    "level": "進階"
+    "level": "進階",
+    "type": "領域專家 Feed",
+    "type_en": "Domain Expert Feed"
   },
   {
     "id": "data-collection",
     "name": "數據採集代理",
     "name_en": "Data Collection Agent",
     "category": "商業智能包",
-    "description": "大規模數據採集約束。規範代理在執行分佈式爬蟲任務時的結構化資料提取邏輯。",
-    "description_en": "Large-scale data collection constraints. Standardizes structured data extraction logic for distributed scraping tasks.",
+    "description": "資料採集工作流提示詞種子，幫助 Agent 規劃合法、禮貌且可審查的資料收集流程。",
+    "description_en": "Data collection workflow prompt seed for legal, polite, and reviewable collection planning.",
     "path": "data-collection/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "multi-agent-coord",
     "name": "多代理協作調度員",
     "name_en": "Multi-Agent Orchestrator",
     "category": "核心代理升級",
-    "description": "多代理協作調度員邏輯。賦予父代理任務拆解與階層化分發的調度與監管思維。",
-    "description_en": "Multi-agent coordinator logic. Empowers parent agents with task breakdown and hierarchical delegation workflows.",
+    "description": "多 Agent 工作流提示詞種子，幫助父 Agent 拆解任務、定義交付物並審查子任務輸出。",
+    "description_en": "Multi-agent workflow prompt seed for task decomposition, deliverable definition, and subtask review.",
     "path": "multi-agent-coord/",
-    "level": "專家"
+    "level": "專家",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "data-analysis-flow",
     "name": "數據分析工作流",
     "name_en": "Data Analysis Flow",
     "category": "商業智能包",
-    "description": "數據科學工作流約束。強制代理在處理原始數據時，遵守清洗、建模與視覺化的標準管線。",
-    "description_en": "Data science workflow constraints. Enforces strict pipelines for cleaning, modeling, and visualizing raw datasets.",
+    "description": "資料分析工作流提示詞種子，幫助 Agent 檢查資料、說明假設、產生分析與驗證輸出。",
+    "description_en": "Data analysis workflow prompt seed for data inspection, assumptions, analysis, and output validation.",
     "path": "data-analysis-flow/",
-    "level": "進階"
+    "level": "進階",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "semantic-memory-boost",
     "name": "語義記憶增強器",
     "name_en": "Semantic Memory Boost",
     "category": "核心代理升級",
-    "description": "長期記憶檢索協議。優化代理對於知識庫與過去對話的查詢依賴，提升 RAG 架構準確度。",
-    "description_en": "Long-term memory retrieval protocol. Optimizes agent reliance on knowledge bases to increase RAG accuracy.",
+    "description": "記憶與知識庫提示詞種子，幫助 Agent 先檢索上下文再回答或修改。",
+    "description_en": "Memory and knowledge-base prompt seed that guides agents to retrieve context before answering or editing.",
     "path": "semantic-memory-boost/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作空間啟動 Feed",
+    "type_en": "Workspace Bootstrapping Feed"
   },
   {
     "id": "protocol-enforcer",
-    "name": "系統協議執行官",
-    "name_en": "Protocol Enforcer",
+    "name": "安全審查執行提示詞種子",
+    "name_en": "Safety Review Enforcer Feed",
     "category": "核心代理升級",
-    "description": "最高權限系統合規官。在工作區內部署最高層級的安全與架構標準監控器。",
-    "description_en": "Root-level compliance enforcer. Deploys the maximum tier of security and architectural monitoring within the workspace.",
+    "description": "安全審查提示詞種子，幫助 Agent 在高風險操作前提出風險、確認與 rollback 建議。",
+    "description_en": "Safety review prompt seed that helps agents surface risks, confirmations, and rollback guidance before high-risk actions.",
     "path": "protocol-enforcer/",
-    "level": "專家"
+    "level": "專家",
+    "type": "安全 Feed",
+    "type_en": "Safety Feed"
   },
   {
     "id": "lead-gen-automation",
     "name": "潛在客戶自動開發",
     "name_en": "Lead Gen Automation",
     "category": "自動化擴展包",
-    "description": "高價值潛客識別邏輯。注入社交網路分析準則，指導代理如何自動化辨識並接觸潛在客戶。",
-    "description_en": "High-value lead identification logic. Injects social network analysis criteria to automatically discover and engage leads.",
+    "description": "潛在客戶開發提示詞種子，幫助 Agent 釐清 ICP、合法資料來源與聯絡名單品質。",
+    "description_en": "Lead generation prompt seed for ICP clarification, lawful data sources, and contact-list quality review.",
     "path": "lead-gen-automation/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "social-content-engine",
     "name": "社群內容流量引擎",
     "name_en": "Social Content Engine",
     "category": "自動化擴展包",
-    "description": "病毒式社群內容狀態機。規範代理如何分析平台趨勢並產出高擴散能力的內容模組。",
-    "description_en": "Viral social content state machine. Standardizes how agents analyze platform trends to spin up high-virality content.",
+    "description": "社群內容工作流提示詞種子，幫助 Agent 對齊平台、受眾、限制與審查流程。",
+    "description_en": "Social content workflow prompt seed for platform, audience, constraint, and review alignment.",
     "path": "social-content-engine/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "test-suite-architect",
     "name": "測試套件架構師",
     "name_en": "Test Suite Architect",
     "category": "開發者工具包",
-    "description": "測試治具構建協議。指導代理如何根據系統需求，利用測試框架建立具覆蓋率的測試例。",
-    "description_en": "Test fixture creation protocol. Directs agents to construct high-coverage test cases using target testing frameworks.",
+    "description": "測試工作流提示詞種子，幫助 Agent 選擇測試層級、檢查可測性並產出可維護測試。",
+    "description_en": "Testing workflow prompt seed for selecting test levels, checking testability, and creating maintainable tests.",
     "path": "test-suite-architect/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "threat-intel-monitor",
     "name": "威脅情報監控員",
     "name_en": "Threat Intel Monitor",
     "category": "商業智能包",
-    "description": "網路安全掃描邏輯。指派嚴苛的威脅情報監控標準，讓代理能持續且準確地識別系統漏洞。",
-    "description_en": "Cybersecurity scanning logic. Assigns strict threat intelligence monitoring standards for continuous vulnerability identification.",
+    "description": "資安審查提示詞種子，幫助 Agent 區分授權範圍、公開情報與修補風險。",
+    "description_en": "Security review prompt seed for authorized scope, public intelligence, and remediation risk review.",
     "path": "threat-intel-monitor/",
-    "level": "進階"
+    "level": "進階",
+    "type": "安全 Feed",
+    "type_en": "Safety Feed"
   },
   {
     "id": "visual-auditor",
     "name": "視覺內容審計代理",
     "name_en": "Visual Auditor Agent",
     "category": "多模態與安全性",
-    "description": "視覺合規審計協議。指導代理如何利用跨模態能力進行像素級的 UI/UX 設計驗證。",
-    "description_en": "Visual compliance auditing protocol. Directs agents to utilize cross-modal capabilities for pixel-level UI/UX validation.",
+    "description": "視覺審查提示詞種子，幫助具備視覺能力的 Agent 檢查 UI、截圖與響應式問題。",
+    "description_en": "Visual review prompt seed for vision-capable agents inspecting UI, screenshots, and responsive issues.",
     "path": "visual-auditor/",
-    "level": "進階"
+    "level": "進階",
+    "type": "領域專家 Feed",
+    "type_en": "Domain Expert Feed"
   },
   {
     "id": "voice-to-logic",
     "name": "語音指令邏輯提取器",
     "name_en": "Voice-to-Logic Extractor",
     "category": "多模態與安全性",
-    "description": "語音降噪與邏輯萃取器。強制代理將模糊不清的語音任務，重構為具備執行條件的結構化命令。",
-    "description_en": "Voice de-noiser and logic extractor. Forces agents to reconstruct fuzzy voice tasks into definitive structured commands.",
+    "description": "語音到任務提示詞種子，幫助 Agent 將口語內容整理成可執行需求與待確認事項。",
+    "description_en": "Voice-to-task prompt seed that converts conversational input into actionable requirements and clarifying questions.",
     "path": "voice-to-logic/",
-    "level": "入門"
+    "level": "入門",
+    "type": "工作流 Feed",
+    "type_en": "Workflow Feed"
   },
   {
     "id": "pii-masking",
     "name": "PII 自動脫敏護欄",
     "name_en": "PII Masking Guardrails",
     "category": "多模態與安全性",
-    "description": "PII 強制脫敏安全層。在回傳或處理資料前，強制攔截並隱藏所有的敏感個人資訊 (遵循 2026 法規)。",
-    "description_en": "Mandatory PII masking security layer. Intercepts and occludes sensitive personal info prior to data processing (2026 compliant).",
+    "description": "PII 安全提示詞種子，幫助 Agent 在處理或輸出資料前標示、遮罩並審查敏感資訊。",
+    "description_en": "PII safety prompt seed for identifying, masking, and reviewing sensitive information before processing or output.",
     "path": "pii-masking/",
-    "level": "專家"
+    "level": "專家",
+    "type": "安全 Feed",
+    "type_en": "Safety Feed"
   },
   {
     "id": "global-compliance",
     "name": "跨國合規執行包裹器",
     "name_en": "Global Compliance Wrapper",
     "category": "多模態與安全性",
-    "description": "跨國合規執行包裹器。內建全球各地法規邊界，引導代理的功能呼叫絕不越過合法界線。",
-    "description_en": "Global compliance execution wrapper. Built-in regulatory boundaries preventing agent tool calls from exceeding legal limits.",
+    "description": "合規審查提示詞種子，幫助 Agent 在跨區資料、行銷或自動化任務中標示法律與政策風險。",
+    "description_en": "Compliance review prompt seed for surfacing legal and policy risks in cross-region data, marketing, or automation tasks.",
     "path": "global-compliance/",
-    "level": "專家"
+    "level": "專家",
+    "type": "安全 Feed",
+    "type_en": "Safety Feed"
   },
   {
     "id": "legal-precision",
     "name": "法律條文精算師",
     "name_en": "Legal Precision Analyst",
     "category": "垂直專業領域",
-    "description": "極限法律邊界測試協議。要求代理套用嚴謹的法理邏輯分析合約風險，絕不妥協模糊地帶。",
-    "description_en": "Extreme legal boundary testing protocol. Demands strict jurisprudential logic for contract risk analysis without compromise.",
+    "description": "法律分析提示詞種子，幫助 Agent 以保守、可審查的方式標示條款風險與不確定性。",
+    "description_en": "Legal analysis prompt seed for conservative, reviewable contract risk and uncertainty marking.",
     "path": "legal-precision/",
-    "level": "專家"
+    "level": "專家",
+    "type": "領域專家 Feed",
+    "type_en": "Domain Expert Feed"
   },
   {
     "id": "medical-research",
     "name": "醫學文獻與藥理綜述助手",
     "name_en": "Medical Research Pro",
     "category": "垂直專業領域",
-    "description": "生醫文獻綜述約束。引入嚴格的醫學資料庫交叉比對標準，確保文獻證據等級達標。",
-    "description_en": "Biomedical literature review constraints. Introduces rigorous medical database cross-referencing to ensure high-evidence standards.",
+    "description": "醫學研究提示詞種子，幫助 Agent 使用高證據標準整理文獻，並避免醫療建議過度宣稱。",
+    "description_en": "Medical research prompt seed for high-evidence literature synthesis and avoiding overclaimed medical advice.",
     "path": "medical-research/",
-    "level": "專家"
+    "level": "專家",
+    "type": "領域專家 Feed",
+    "type_en": "Domain Expert Feed"
   },
   {
     "id": "intent-clarifier",
     "name": "意圖深度釐清器",
     "name_en": "Deep Intent Clarifier",
     "category": "核心代理升級",
-    "description": "深層意圖釐清狀態機。當收到模糊指令時，強制阻斷執行並轉向多重選項生成，消除偏誤。",
-    "description_en": "Deep intent clarifier state machine. Blocks execution upon ambiguous instructions, forcing the generation of multiple clarifying options.",
+    "description": "意圖釐清提示詞種子，幫助 Agent 在任務模糊時先提出具體問題與選項。",
+    "description_en": "Intent clarification prompt seed that helps agents ask concrete questions and options when a task is vague.",
     "path": "intent-clarifier/",
-    "level": "進階"
+    "level": "進階",
+    "type": "基線 Feed",
+    "type_en": "Baseline Feed"
   }
 ]

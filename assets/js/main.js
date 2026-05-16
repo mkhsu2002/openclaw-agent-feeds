@@ -90,14 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hero Badge
         const heroBadge = document.getElementById('hero-badge');
         if (heroBadge) heroBadge.innerHTML = isEn ?
-            '<i class="fas fa-bolt me-1"></i> Fully Optimized for OpenClaw v3.24' :
-            '<i class="fas fa-bolt me-1"></i> 全面支援 OpenClaw v3.24 最新架構';
+            '<i class="fas fa-bolt me-1"></i> v0.3 Cross-Agent Prompt Seed Update' :
+            '<i class="fas fa-bolt me-1"></i> v0.3 跨 Agent 提示詞種子更新';
 
         // Hero Title & Description
-        document.querySelector('.hero-section h1').innerText = isEn ? 'OpenClaw Agent Feeds' : 'OpenClaw 龍蝦升級飼料包';
+        document.querySelector('.hero-section h1').innerText = 'OpenClaw Agent Feeds';
         document.querySelector('.hero-section p').innerHTML = isEn ?
-            'Make your OpenClaw AI Agents more precise, stable, and disciplined.<br class="d-none d-md-block">Inject high-quality Feeds into your OpenClaw workspace to enhance judgment, tool usage, and file modification workflows.<br class="d-none d-md-block">It\'s not about replacing official skills/plugins — it\'s about using them more effectively.' :
-            '讓你的 OpenClaw AI Agents 做事更準、更穩、更有紀律。<br class="d-none d-md-block">將高品質 Feed 注入 OpenClaw 工作區，讓 AI Agents 在判斷、工具使用與改檔流程上更精準、更穩定。<br class="d-none d-md-block">它不是要取代 official skills/plugins，而是幫你更有效地使用它們。';
+            'Optimized prompt seeds for building better AI agent Skills, instructions, and workflows.<br class="d-none d-md-block">They help capable agents understand intent, inspect a workspace, plan safe changes, and generate or update Skills when appropriate.<br class="d-none d-md-block">Feeds are prompts, not protocols, installers, or executable packages.' :
+            '用於建置更好 AI Agent Skills、指令與工作流的優化提示詞種子。<br class="d-none d-md-block">幫助高能力 Agent 理解意圖、檢查 workspace、提出安全計畫，並在適當時生成或更新 Skills。<br class="d-none d-md-block">Feeds 是提示詞，不是協議、安裝程式或可執行套件。';
 
         // Hero Buttons
         const heroButtons = document.querySelectorAll('.hero-section .btn');
@@ -113,20 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // Intro Section — Title
         const introTitle = document.getElementById('intro-title');
         if (introTitle) introTitle.innerHTML = isEn ?
-            '<i class="fas fa-info-circle text-primary me-2"></i>What is "Lobster Feed"?' :
-            '<i class="fas fa-info-circle text-primary me-2"></i>什麼是「龍蝦飼料」？';
+            '<i class="fas fa-info-circle text-primary me-2"></i>What is a Feed?' :
+            '<i class="fas fa-info-circle text-primary me-2"></i>什麼是 Feed？';
 
         // Intro Section — Description
         const introDesc = document.getElementById('intro-desc');
         if (introDesc) introDesc.innerHTML = isEn ?
-            'This project provides a set of pre-configured <strong>behavioral upgrade scripts (Feeds)</strong>. Think of them as a "code of conduct" for your OpenClaw AI Agents — injecting <strong>Guarded Decision Loops</strong> and rigorous execution protocols to significantly enhance your agents\' capabilities:' :
-            '本專案提供一系列預配置的 <strong>行為升級腳本 (Feeds)</strong>。您可以將其視為 OpenClaw AI Agents 的「行為準則指南」，藉由注入 <strong>防護決策迴圈 (Guarded Decision Loop)</strong> 與嚴謹的執行協議，它能大幅強化您的 AI Agents 能力：';
+            'This project provides <strong>optimized prompt seeds (Feeds)</strong>. They help AI agents understand intent, inspect the current workspace, plan safe changes, and generate or update Skills, instructions, checklists, or workflows when appropriate:' :
+            '本專案提供一系列 <strong>優化提示詞種子 (Feeds)</strong>。它們幫助 AI Agents 理解意圖、檢查目前 workspace、規劃安全變更，並在適當時生成或更新 Skills、指令、檢查清單或工作流：';
 
         // Intro Section — Bullets
         const introBullets = document.getElementById('intro-bullets');
         if (introBullets) introBullets.innerHTML = isEn ?
-            '<li><strong>Conditional Branches</strong>: Empowers agents with the ability to clarify, retry, and report errors instead of blindly guessing.</li><li><strong>Mandatory Verify</strong>: Establishes a review culture where every output is validated, drastically reducing hallucinations.</li><li><strong>Safety Protocols</strong>: Enforces Inspect & Backup before any project modifications, providing rollback protection.</li>' :
-            '<li><strong>條件分流 (Conditional Branches)</strong>：賦予 AI Agents 釐清、重試與報錯的決斷力，取代盲目瞎猜。</li><li><strong>強制驗證 (Mandatory Verify)</strong>：建立產出即校驗的審查文化，大幅壓制各種幻覺。</li><li><strong>安全協議 (Safety Protocols)</strong>：在修改專案前強制 Inspect 與 Backup，提供反悔保護。</li>';
+            '<li><strong>Intent shaping</strong>: Helps agents clarify goals and constraints before acting.</li><li><strong>Workspace inspection</strong>: Encourages agents to inspect context before proposing edits.</li><li><strong>Safety review</strong>: Highlights when generated Skills, commands, APIs, or file changes need user review.</li>' :
+            '<li><strong>意圖整理</strong>：幫助 Agent 在行動前釐清目標與限制條件。</li><li><strong>Workspace 檢查</strong>：鼓勵 Agent 先理解上下文，再提出修改。</li><li><strong>安全審查</strong>：標示生成 Skills、命令、API 呼叫或檔案變更何時需要使用者審查。</li>';
 
         // How-to Card — Title
         const howtoTitle = document.getElementById('howto-title');
@@ -137,12 +137,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // How-to Card — Steps
         const howtoSteps = document.getElementById('howto-steps');
         if (howtoSteps) howtoSteps.innerHTML = isEn ?
-            '<li>Browse the "Feed Buffet" below and pick the capabilities you need.</li><li>Click on a card to read the <strong>Technical Specification</strong>.</li><li>Click <strong>"Installation Guide"</strong> to copy the feed instructions ready for your AI Agent.</li><li>For one-time use, paste directly to your agent. For persistent rules, write them into your workspace\'s <code>AGENTS.md</code>.</li>' :
-            '<li>在下方的「飼料包 Buffet」中挑選所需的擴充能力。</li><li>點擊卡片閱讀 <strong>技術規格詳情</strong>。</li><li>點擊 <strong>「安裝指南」</strong>，複製可直接貼給 AI Agents 的 Feed 指令。</li><li>臨時使用時，直接貼給 AI Agents；要讓規則常駐，再寫入工作區的 <code>AGENTS.md</code>。</li>';
+            '<li>Browse the Feed library and pick the prompt seed that matches your goal.</li><li>Click a card to read the <strong>overview</strong>.</li><li>Click <strong>"Feed Prompt"</strong> to copy the prompt seed for your AI agent session.</li><li>For durable behavior, ask the agent to convert the Feed into reviewed Skills, checklists, or <code>AGENTS.md</code> instructions.</li>' :
+            '<li>在 Feed library 中挑選符合目標的提示詞種子。</li><li>點擊卡片閱讀 <strong>概覽</strong>。</li><li>點擊 <strong>「Feed Prompt」</strong>，複製可貼給 AI Agent session 的提示詞種子。</li><li>若要長期使用，請讓 Agent 轉成經審查的 Skills、檢查清單或 <code>AGENTS.md</code> 指令。</li>';
 
         // Buffet Section
         document.querySelector('.buffet-header h2').innerText = isEn ? 'Feed Buffet' : '飼料包 Buffet';
-        document.querySelector('.buffet-header p').innerText = isEn ? 'Choose carefully based on your model version' : '請遵照最低建議模型版本慎選餵食';
+        document.querySelector('.buffet-header p').innerText = isEn ? 'Use with high-capability reasoning models and review generated changes' : '請搭配高階推理模型使用，並審查 Agent 產出的變更';
         if (searchInput) searchInput.placeholder = isEn ? 'Search modules...' : '搜尋模組名稱或描述...';
         if (modalCloseBtn) modalCloseBtn.innerText = isEn ? 'Close' : '關閉';
 
@@ -269,7 +269,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const matchesLvl = currentLevel === '全部' || p.level === currentLevel;
             const matchesSearch = !searchQuery || 
                 p.name.toLowerCase().includes(searchQuery) || 
-                p.description.toLowerCase().includes(searchQuery);
+                p.description.toLowerCase().includes(searchQuery) ||
+                (p.name_en || '').toLowerCase().includes(searchQuery) ||
+                (p.description_en || '').toLowerCase().includes(searchQuery) ||
+                (p.type || '').toLowerCase().includes(searchQuery) ||
+                (p.type_en || '').toLowerCase().includes(searchQuery);
             return matchesCat && matchesLvl && matchesSearch;
         });
 
@@ -293,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="h5 fw-bold mb-3">${packName}</h3>
                         <p class="text-muted small mb-4 flex-grow-1">${packDesc}</p>
                         <button onclick="window.app.viewDetails('${pack.id}')" class="btn-view-spec w-100">
-                            ${isEn ? 'View Technical Spec' : '查看技術規格'}
+                            ${isEn ? 'View Feed Overview' : '查看 Feed 概覽'}
                         </button>
                     </article>
                 </div>
@@ -404,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalTitle.innerText = isEn && pack.name_en ? pack.name_en : pack.name;
         modalContent.innerHTML = '<div class="loading-overlay"><div class="spinner-border text-primary" role="status"></div></div>';
         installGuideBtn.classList.add('d-none');
-        installGuideBtn.innerText = isEn ? 'Installation Guide' : '安裝指南';
+        installGuideBtn.innerText = isEn ? 'Feed Prompt' : 'Feed Prompt';
         
         packModal.show();
 
@@ -434,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modalContent.innerHTML = renderMarkdown(md);
         } catch (err) {
             modalContent.innerHTML = `<div class="alert alert-info py-4 text-center">
-                ${currentLang === 'en' ? 'Installation guide is coming soon.' : '安裝指南準備中。'}
+                ${currentLang === 'en' ? 'Feed prompt is coming soon.' : 'Feed Prompt 準備中。'}
             </div>`;
         }
     }
@@ -442,4 +446,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose to global
     window.app = { viewDetails, loadInstallGuide, copyToClipboard };
 });
-

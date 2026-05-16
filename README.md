@@ -1,121 +1,159 @@
-# OpenClaw Agent Feeds (龍蝦升級飼料包) V2.0
+# OpenClaw Agent Feeds
 
-🔥 **Fully Optimized for OpenClaw v3.24 / 全面支援 OpenClaw v3.24 架構** 🔥
+用於建置更好 AI Agent Skills、指令與工作流的優化提示詞種子。
 
-歡迎來到 OpenClaw AI Agents 升級模組庫
+Optimized prompt seeds for building better AI agent skills, instructions, and workflows.
 
-- **[繁體中文介紹 (Traditional Chinese)](README.zh-TW.md)**
-- **[English Version](README.en.md)**
-- **標準化升級**：將複雜的執行邏輯封裝成易於解讀的指令。
-- **即時部署**：複製、貼上、發送，即可讓 AI 代理獲得新的能力。
-- **技術規範**：為 AI 提供確定性框架，減少幻覺，提升執行精準度。
+目前版本 / Current version: **v0.3**
 
-本專案旨在提供一個高品質的「飼料 Buffet」，讓開發者與系統架構師能根據需求，為他們的 AI 代理挑選最合適的技術增強系統。
+OpenClaw Skills 教 Agent「能做什麼」。
+Agent Feeds 幫助使用者告訴 Agent「應該理解什麼、考慮什麼、建置什麼，以及避免什麼」。
 
-### 🎯 這個專案適合誰？ (Who is this for?)
-- **OpenClaw 新手**：想要立即獲得更穩定、更專業的 AI 回覆，而不需要從頭學習完整的 Skill/Plugin 開發技術棧。
-- **進階使用者與架構師**：尋求可重複使用的 Feed 系統設計模式，快速部署多代理協作架構。
-- **開源貢獻者**：對 Prompt Engineering 系統化、Agent 工作流、以及安全變異層協議 (Safe Mutation Protocols) 深感興趣的開發者。
+OpenClaw Skills teach agents what they can do.
+Agent Feeds help users explain what they want the agent to understand, consider, build, and avoid.
 
-### 🌟 範例成果 (Before / After Example)
-如果您還在猶豫是否需要安裝 Feed，請看看以下的差異：
-- **❌ Without Feed (未使用)**: AI 產出含糊、冗長且充滿免責聲明的廢話，甚至隨意猜測（幻覺）。
-- **✅ With Universal Core L0 (使用通用核心飼料)**: AI 輸出結構化、經過交叉查證的精準結論，並在執行高危操作前主動攔截風險。
+Feed 是一種為高階 AI Agent session 設計的優化提示詞種子。它能幫助 Agent 解讀使用者意圖、檢查目前 workspace、推理最安全且最有用的建置方式，並在適當時生成或更新 Skills、指令、設定、檢查清單或工作流。
 
-### 📐 設計公理 (What makes a good feed?)
-我們不是普通的提示詞倉庫，這是一個「方法論」等級的 Repo。優秀的 Feed 必須具備以下特點：
-1. **Improves behavior, not just tone** (改變行為邏輯，而不只是改變語氣)
-2. **Reduces hallucination and guesswork** (大幅減少幻覺與瞎猜)
-3. **Encourages safe, minimal changes** (鼓勵最少權限與最安全的修改)
-4. **Works with OpenClaw skills/plugins** (與原生套件完美協同，而非取代它們)
-5. **Stays readable and reusable** (專注於人類工程師也能看懂的高可讀性結構)
+A Feed is a carefully designed prompt seed intended for high-capability AI agent sessions. It helps the agent interpret user intent, inspect the current workspace, reason about the safest and most useful implementation path, and generate or update Skills, instructions, settings, checklists, or workflows when appropriate.
 
-Lobster Feeds are high-level prompt templates designed for OpenClaw, aimed at enhancing AI Agent capabilities with ease of use through instant messaging.
+Feeds 不是協議、安裝程式，也不是可執行套件。Feeds 是人類意圖與 Agent 執行能力之間的提示詞溝通種子。
 
-### 🛒 Lobster Feed Library (主廚推薦飼料庫)
+Feeds are not protocols, installers, or executable packages. They are prompt-based communication seeds between human intent and agent execution.
 
-### 🔹 核心代理升級
-- **龍蝦通用核心飼料 (L0)** `[入門]` [NEW] - [概覽](feeds/universal-core/overview.md) | [安裝指令](feeds/universal-core/installation_guide.md)
-- **龍蝦確定性代理框架** `[專家]` - [概覽](feeds/deterministic-framework/overview.md) | [安裝指令](feeds/deterministic-framework/installation_guide.md)
-- **反幻覺邏輯護欄** `[入門]` - [概覽](feeds/hallucination-guardrails/overview.md) | [安裝指令](feeds/hallucination-guardrails/installation_guide.md)
-- **工具驅動狀態機** `[入門]` - [概覽](feeds/tool-driven-state/overview.md) | [安裝指令](feeds/tool-driven-state/installation_guide.md)
-- **多代理協作調度員** `[專家]` - [概覽](feeds/multi-agent-coord/overview.md) | [安裝指令](feeds/multi-agent-coord/installation_guide.md)
-- **語義記憶增強器** `[入門]` - [概覽](feeds/semantic-memory-boost/overview.md) | [安裝指令](feeds/semantic-memory-boost/installation_guide.md)
-- **系統協議執行官** `[專家]` - [概覽](feeds/protocol-enforcer/overview.md) | [安裝指令](feeds/protocol-enforcer/installation_guide.md)
-- **意圖深度釐清器** `[進階]` [NEW] - [概覽](feeds/intent-clarifier/overview.md) | [安裝指令](feeds/intent-clarifier/installation_guide.md)
+官方網站 / Official site: [https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
 
-### 🔹 多模態與安全性 [NEW]
-- **視覺內容審計代理** `[進階]` - [概覽](feeds/visual-auditor/overview.md) | [安裝指令](feeds/visual-auditor/installation_guide.md)
-- **語音指令邏輯提取器** `[入門]` - [概覽](feeds/voice-to-logic/overview.md) | [安裝指令](feeds/voice-to-logic/installation_guide.md)
-- **PII 自動脫敏護欄** `[專家]` - [概覽](feeds/pii-masking/overview.md) | [安裝指令](feeds/pii-masking/installation_guide.md)
-- **跨國合規執行包裹器** `[專家]` - [概覽](feeds/global-compliance/overview.md) | [安裝指令](feeds/global-compliance/installation_guide.md)
+## What is a Feed?
 
-### 🔹 垂直專業領域 [NEW]
-- **法律條文精算師** `[專家]` - [概覽](feeds/legal-precision/overview.md) | [安裝指令](feeds/legal-precision/installation_guide.md)
-- **醫學文獻與藥理綜述助手** `[專家]` - [概覽](feeds/medical-research/overview.md) | [安裝指令](feeds/medical-research/installation_guide.md)
+Feed is an optimized prompt seed for a capable AI agent. It communicates intent, constraints, preferred workflows, safety expectations, and skill-building goals.
 
-### 🔹 自動化擴展包
-- **自主 research 代理** `[進階]` - [概覽](feeds/autonomous-research/overview.md) | [安裝指令](feeds/autonomous-research/installation_guide.md)
-- **AI SEO 內容工廠** `[進階]` - [概覽](feeds/ai-seo-factory/overview.md) | [安裝指令](feeds/ai-seo-factory/installation_guide.md)
-- **聯盟行銷自動化** `[入門]` - [概覽](feeds/affiliate-marketing-auto/overview.md) | [安裝指令](feeds/affiliate-marketing-auto/installation_guide.md)
-- **潛在客戶自動開發** `[入門]` - [概覽](feeds/lead-gen-automation/overview.md) | [安裝指令](feeds/lead-gen-automation/installation_guide.md)
-- **社群內容流量引擎** `[入門]` - [概覽](feeds/social-content-engine/overview.md) | [安裝指令](feeds/social-content-engine/installation_guide.md)
+Feed 是為高能力 AI Agent 設計的優化提示詞種子，用來傳達意圖、限制條件、偏好工作流、安全期待與 Skill 建置目標。
 
-### 🔹 開發者工具包
-- **軟體專案架構代理** `[入門]` - [概覽](feeds/software-builder/overview.md) | [安裝指令](feeds/software-builder/installation_guide.md)
-- **代碼除錯代理** `[入門]` - [概覽](feeds/code-debugger/overview.md) | [安裝指令](feeds/code-debugger/installation_guide.md)
-- **文檔自動生成器** `[入門]` - [概覽](feeds/doc-generator/overview.md) | [安裝指令](feeds/doc-generator/installation_guide.md)
-- **測試套件架構師** `[入門]` - [概覽](feeds/test-suite-architect/overview.md) | [安裝指令](feeds/test-suite-architect/installation_guide.md)
+## What Feeds Are Not / Feeds 不是什麼
 
-### 🔹 商業智能包
-- **市場研究自動化** `[進階]` - [概覽](feeds/market-research/overview.md) | [安裝指令](feeds/market-research/installation_guide.md)
-- **競爭情報代理** `[進階]` - [概覽](feeds/competitive-intel/overview.md) | [安裝指令](feeds/competitive-intel/installation_guide.md)
-- **數據採集代理** `[入門]` - [概覽](feeds/data-collection/overview.md) | [安裝指令](feeds/data-collection/installation_guide.md)
-- **數據分析工作流** `[進階]` - [概覽](feeds/data-analysis-flow/overview.md) | [安裝指令](feeds/data-analysis-flow/installation_guide.md)
-- **威脅情報監控員** `[進階]` - [概覽](feeds/threat-intel-monitor/overview.md) | [安裝指令](feeds/threat-intel-monitor/installation_guide.md)
+Feeds are not deterministic protocols.
+Feeds are not automatic installers.
+Feeds are not replacements for OpenClaw Skills.
+Feeds are not guaranteed to produce identical results across different models.
+Feeds are not meant to bypass user review.
 
----
+Feeds 不是確定性協議。
+Feeds 不是自動安裝程式。
+Feeds 不是 OpenClaw Skills 的替代品。
+Feeds 不保證在不同模型上產生完全一致的結果。
+Feeds 不應跳過使用者審查。
 
-## 🗺️ 公開開發藍圖 (Roadmap)
-加強 Feed 生態系，我們未來的重點將放在：
-- 統一所有 feeds 到最新的 V2.0 防護協議架構 (Unify all feeds under the new protocol structure)
-- 將 feeds 清晰拆分為培訓與變異兩大類 (Split feeds into Training vs Mutation)
-- 為最熱門的中文 Feed 補齊英文版本 (Add English parity for top feeds)
-- 持續優化新手的安裝與上手體驗 (Improve beginner onboarding)
-- 為 Feed 補充執行前後的真實對比案例 (Add example before/after outputs)
+A Feed is an optimized prompt seed. It works best when interpreted by a capable reasoning model inside an agent environment with appropriate tools and context.
 
-## 🤝 如何參與貢獻 (How to Contribute)
-這是一個完全開源的社群專案，我們非常歡迎任何形式的貢獻！您可以透過以下方式幫助我們：
-- 🐛 **Report a bug** (回報執行錯誤或幻覺災情)
-- 💡 **Suggest a new feed** (提議一個全新的專業領域 Feed)
-- 📝 **Improve wording / docs** (幫忙潤飾文件或修復錯字)
-- 🛠️ **Submit a pull request** (為現有的 Feed 提交 PR 進行強化)
+Feed 是一種優化提示詞種子，最適合由具備高階推理能力的模型，在具有適當工具與上下文的 Agent 環境中解讀與執行。
 
-👉 詳細指引請見：[CONTRIBUTING.md](CONTRIBUTING.md)
+## Why Feeds Matter Even When Skills Exist
 
-### 🐣 給新手的貢獻提案 (Good First Contribution Ideas)
-不知道從哪裡開始嗎？試試看這些小任務：
-- Translate one feed (幫忙翻譯某一個 Feed 到英文)
-- Improve one installation guide (優化任一個安裝指南的排版)
-- Rewrite one feed to match the new protocol style (將舊版的 Feed 改寫成 V2.0 架構)
-- Add model compatibility notes (為 Feed 增加特定模型的相容性標記)
-- Improve one example screenshot (為 Repo 提供清晰的執行截圖)
+Skills are capability packages. Feeds are prompt seeds that help agents decide how to create, update, combine, or use capabilities.
 
-**💬 Have an idea for a new feed, refinement, or category? [Open an issue first!](https://github.com/mkhsu2002/openclaw-agent-feeds/issues)**
+Skills answer: **What can the agent do?**
+Feeds answer: **How should the agent understand this task, inspect the environment, decide what capabilities are needed, and safely build or use them?**
 
----
+Skills 是能力套件。Feeds 是幫助 Agent 判斷如何建立、更新、組合或使用能力的提示詞種子。
 
-### 🚀 官方網站：[https://openclawfeeds.icareu.tw/](https://openclawfeeds.icareu.tw/)
+Skills 回答：**Agent 能做什麼？**
+Feeds 回答：**Agent 應如何理解這個任務、檢查環境、判斷需要哪些能力，並安全地建立或使用它們？**
 
-**[授權條款 (MIT License)](LICENSE)**
+Feeds may lead to new or updated Skills, `AGENTS.md` instructions, workspace rules, setup checklists, safety checklists, task templates, recurring workflows, and documentation updates. But Feeds themselves remain prompts.
 
-### ☕️ 支持此專案 / Support
+Feeds 可能引導 Agent 建立或更新 Skills、`AGENTS.md` 指令、workspace rules、setup checklists、safety checklists、task templates、recurring workflows 與文件。但 Feeds 本身仍然是提示詞。
 
-如果您覺得這個專案對您有幫助，歡迎請我喝杯咖啡支持持續開發！
-If you find this project helpful, feel free to buy me a coffee!
+## Recommended Model Level
 
-<a href="https://buymeacoffee.com/mkhsu2002w" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+Feeds work best with high-capability reasoning models. A Feed is not deterministic. Different LLMs may react differently to the same Feed.
 
----
+For best results, use a strong reasoning model when interpreting a Feed or generating/modifying Skills. Use lower-cost or local models only after the Feed has been converted into stable instructions, checklists, or Skills. Always review generated Skills before allowing command execution, file modification, API calls, or external service access.
 
-&copy; 2026 FlyPig AI 開源專案. All rights reserved.
+Feeds 最適合搭配高階推理模型。Feed 不是確定性機制，同一個 Feed 在不同 LLM 上可能有不同效果。
+
+## OpenClaw Usage
+
+OpenClaw is the primary target environment. Use Feeds in high-capability OpenClaw sessions to inspect workspace state, create or update Skills, generate workspace instructions, and refine agent behavior. OpenClaw-specific outputs may include Skills, workspace instructions, or ClawHub-oriented skill packaging when appropriate.
+
+OpenClaw 是主要目標環境。建議在高階推理模型的 OpenClaw session 中使用 Feed，先檢查 workspace，再提出計畫，最後才產生或更新 Skill、指令、檢查清單或工作流。
+
+See / 詳見: [docs/openclaw-usage.md](docs/openclaw-usage.md)
+
+## Hermes Agent Usage
+
+Hermes Agent compatibility is exploratory unless verified. Hermes appears to emphasize self-improvement, memory, skill creation from experience, and long-running agent behavior. Feeds may be useful as goal seeds, skill-building seeds, memory-shaping prompts, or workflow bootstrapping prompts.
+
+Hermes Agent 相容性目前屬探索性。Feeds 可作為 goal seeds、learning seeds、skill-building seeds、memory-shaping prompts 或 workflow bootstrapping prompts，但未測試前不應宣稱原生支援。
+
+See / 詳見: [docs/hermes-agent-notes.md](docs/hermes-agent-notes.md)
+
+## Codex and IDE Agent Usage
+
+Codex can use `AGENTS.md` for repo-level guidance. Feeds can be adapted into `AGENTS.md` sections, setup prompts, task kickoff prompts, or safety and review checklists. For Cursor, Claude Code, Windsurf, GitHub Copilot coding agents, Gemini CLI, Devin, and similar IDE agents, compatibility depends on workspace access, instruction loading, tools, and model reasoning quality.
+
+Codex 可使用 `AGENTS.md` 作為 repo-level guidance。Feeds 可改寫成 `AGENTS.md` 區塊、setup prompts、task kickoff prompts 或安全審查清單。其他 IDE agents 的相容性需逐一評估。
+
+See / 詳見: [docs/codex-and-ide-agents.md](docs/codex-and-ide-agents.md)
+
+## Feed Types
+
+- Baseline Feed / 基線 Feed
+- Skill-Building Feed / Skill 建置 Feed
+- Workspace Bootstrapping Feed / 工作空間啟動 Feed
+- Workflow Feed / 工作流 Feed
+- Domain Expert Feed / 領域專家 Feed
+- Safety Feed / 安全 Feed
+- Cross-Agent Feed / 跨 Agent Feed
+
+## Recommended Feed Format
+
+Recommended sections: Purpose, Recommended Agent / Model Level, User Intent, Best Used With, Expected Agent Behavior, Workspace Inspection Guidance, Skill-Building Guidance, Safety Guidance, Suggested Output, and Feed Prompt.
+
+建議欄位：Purpose、Recommended Agent / Model Level、User Intent、Best Used With、Expected Agent Behavior、Workspace Inspection Guidance、Skill-Building Guidance、Safety Guidance、Suggested Output、Feed Prompt。
+
+See / 詳見: [docs/feed-format.md](docs/feed-format.md)
+
+## Safety and Review
+
+Review before deleting files, rewriting architecture, installing dependencies, running shell commands, accessing credentials, calling external APIs, writing to databases, deploying to production, publishing packages, pushing to main, modifying security settings, or modifying billing/payment systems.
+
+刪除檔案、重寫架構、安裝依賴、執行 shell commands、存取 credentials、呼叫 external APIs、寫入 databases、部署 production、發布 packages、push 到 main、修改 security settings、修改 billing/payment systems 前，請先審查。
+
+See / 詳見: [docs/safety-and-review.md](docs/safety-and-review.md)
+
+## Repository Structure
+
+```text
+.
+├── index.html
+├── assets/
+├── docs/
+├── feeds/
+│   ├── packs.json
+│   └── <feed-id>/
+│       ├── README.md
+│       ├── feed.md
+│       ├── overview.md
+│       ├── overview.en.md
+│       ├── installation_guide.md
+│       └── installation_guide.en.md
+└── CHANGELOG.md
+```
+
+## Roadmap
+
+See / 詳見: [docs/roadmap.md](docs/roadmap.md)
+
+## Version v0.3 Notes
+
+v0.3 repositions OpenClaw Agent Feeds as optimized prompt seeds for high-capability AI agents. They help users turn intent into better Skills, instructions, workflows, and safer agent behavior.
+
+v0.3 將 OpenClaw Agent Feeds 重新定位為高能力 AI Agents 的優化提示詞種子，幫助使用者把意圖轉成更好的 Skills、指令、工作流與更安全的 Agent 行為。
+
+## Sources Used for v0.3 Alignment / v0.3 對齊參考
+
+- [OpenClaw docs](https://openclawdoc.com/)
+- [OpenClaw ClawHub docs](https://docs.openclaw.ai/tools/clawhub)
+- [Hermes Agent learning loop](https://hermes-agent.ai/features/learning-loop)
+- [Codex AGENTS.md guide](https://developers.openai.com/codex/guides/agents-md)
+
+[English](README.en.md) | [繁體中文](README.zh-TW.md) | [MIT License](LICENSE)

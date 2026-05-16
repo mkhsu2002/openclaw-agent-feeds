@@ -1,16 +1,23 @@
-# 🏗 [Mutation Feed] 軟體專案架構代理 (Software Project Architect)
+## v0.3 定位提醒
 
-### �� 模組簡介
+此 Feed 是優化提示詞種子，不是確定性協議、安裝程式或可執行套件。請搭配高階推理模型使用，並在允許 Agent 修改檔案、建立 Skills、呼叫 API、部署或觸及敏感資料前進行使用者審查。
+
+**Feed 類型**：Skill 建置 Feed
+
+
+# 🏗 [Prompt Seed] 軟體專案架構代理 (Software Project Architect)
+
+### 模組簡介
 這將使代理在規劃、工具使用、回應結構與結果驗證上更穩定、更精確、更少臆測。
 
-本飼料包（Mutation Feed）專為**安全地生成與修改專案架構**設計。它將您的代理升級為具備「防呆防護決策迴圈」的高階工程師。在寫入任何程式碼前，它必須經過極度嚴謹的 Assess, Backup, Minimal Diff 與 Validation 流程，徹底杜絕把原本正常的專案改壞的悲劇。
+本飼料包（Prompt Seed）專為**安全地生成與修改專案架構**設計。它將您的代理升級為具備「防呆審慎推理流程」的高階工程師。在寫入任何程式碼前，它必須經過極度嚴謹的 Assess, Backup, Minimal Diff 與 Validation 流程，徹底杜絕把原本正常的專案改壞的悲劇。
 
 ### ⚙️ 技能協同 (Skill Synergy)
 - **建議搭配**：`run_command`, `replace_file_content`, `list_dir`
-- **協同效應**：將檔案修改工具與嚴格的查核防護決策迴圈結合。所有 `write`/`replace` 動作都被防護決策迴圈的 `Verify` 與 `Rollback` 分支嚴密監控。
+- **協同效應**：將檔案修改工具與嚴格的查核審慎推理流程結合。所有 `write`/`replace` 動作都被審慎推理流程的 `Verify` 與 `Rollback` 分支嚴密監控。
 
-### 🚀 行為升級與協議 (Behavior Upgrade Target)
-1. **強制驗證迴圈 (Validation Loop)**：修改完成後強制調用 Linter 或編譯測試，失敗即觸發 Rollback-Ready 機制。
+### 🚀 適用情境與預期行為 (Use Case and Expected Behavior)
+1. **建議驗證迴圈 (Validation Loop)**：修改完成後建議調用 Linter 或編譯測試，失敗即觸發 Rollback-Ready 機制。
 2. **條件分流 (Conditional Branches)**：當發現依賴套件模糊或專案結構不清楚時，觸發 Clarification Branch 暫停動作。
 3. **精準盤點 (Check Capability)**：下筆前嚴格評估自身是否有足夠的上下文來進行 Minimal Diff。
 4. **全域常駐 (Pervasive Scope)**：適用於所有涉及檔案新增、修改或程式碼撰寫的非平凡任務。
